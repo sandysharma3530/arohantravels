@@ -12,7 +12,7 @@
   --text-muted: #667085;
   --radius: 0.75rem;
   --shadow-soft: 0 10px 30px rgba(6, 27, 54, 0.08);
-  --header-height: 5.5rem;
+  --header-height: 6rem;
 }
 
 @theme inline {

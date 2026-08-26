@@ -4,7 +4,7 @@ import { siteConfig } from "@/content/site-config";
 export default function manifest(): MetadataRoute.Manifest {
   return {
     name: siteConfig.businessName,
-    short_name: "Smart Squad",
+    short_name: "Arohan Travels",
     description: siteConfig.shortDescription,
     start_url: "/",
     display: "standalone",

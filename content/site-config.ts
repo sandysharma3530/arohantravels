@@ -6,9 +6,9 @@
  */
 
 export const siteConfig = {
-  businessName: "Smart Squad Travels",
-  tagline: "Travel Smart. Travel Together.",
-  legalName: "Smart Squad Travels",
+  businessName: "Arohan Travels",
+  tagline: "Where Every Journey Feels Invited.",
+  legalName: "Arohan Travels",
   shortDescription:
     "Comfortable group transportation and Traveller rental services for family trips, corporate travel, weddings, pilgrimages, airport transfers and customized outstation journeys across Delhi NCR and North India.",
 

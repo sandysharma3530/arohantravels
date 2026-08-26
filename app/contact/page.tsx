@@ -29,7 +29,7 @@ import type { vehicleOptions } from "@/lib/validation";
 export const metadata = createMetadata({
   title: "Contact Us for a Custom Traveller Quote",
   description:
-    "Contact Smart Squad Travels for customized Force Traveller and Urbania quotations. Call, WhatsApp or submit an enquiry for group travel from Noida, Greater Noida and Delhi NCR.",
+    "Contact Arohan Travels for customized Force Traveller and Urbania quotations. Call, WhatsApp or submit an enquiry for group travel from Noida, Greater Noida and Delhi NCR.",
   path: "/contact",
   keywords: [
     "Traveller rental contact Noida",

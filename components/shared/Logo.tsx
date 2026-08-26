@@ -3,16 +3,20 @@ import Link from "next/link";
 import { cn } from "@/lib/utils";
 import { siteConfig } from "@/content/site-config";
 
+/** Bump this whenever the logo file changes so browsers do not keep the old Smart Squad image. */
+export const LOGO_SRC = "/images/brand/arohan-logo.png";
+
 type LogoProps = {
   variant?: "light" | "dark";
   className?: string;
   showTagline?: boolean;
-  /** When true, shows HTML SMART SQUAD / TRAVELS text beside the mark. */
+  /** When true, shows HTML Aamantran / Arohan Travels text beside the mark. */
   showWordmark?: boolean;
 };
 
 /**
- * Brand lockup — logo image by default (no HTML wordmark).
+ * Brand lockup — Aamantran by Arohan Travels.
+ * Uses an unoptimized PNG so Next.js image cache cannot serve the previous logo.
  */
 export function Logo({
   variant = "dark",
@@ -26,7 +30,7 @@ export function Logo({
     <Link
       href="/"
       className={cn(
-        "group inline-flex items-center gap-2.5 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-teal focus-visible:ring-offset-2",
+        "group inline-flex items-center gap-2.5 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold focus-visible:ring-offset-2",
         isLight
           ? "focus-visible:ring-offset-navy"
           : "focus-visible:ring-offset-white",
@@ -34,14 +38,15 @@ export function Logo({
       )}
       aria-label={`${siteConfig.businessName} — Home`}
     >
-      <span className="relative block h-[3.75rem] w-[4.85rem] shrink-0 transition-transform duration-300 group-hover:scale-[1.03] sm:h-16 sm:w-[5.2rem] md:h-[4.5rem] md:w-[5.85rem]">
+      <span className="relative block h-[4.6rem] w-[5.6rem] shrink-0 overflow-hidden rounded-md transition-transform duration-300 group-hover:scale-[1.03] sm:h-[5.1rem] sm:w-[6.2rem] md:h-[5.35rem] md:w-[6.5rem]">
         <Image
-          src="/images/brand/logo-header.png"
-          alt=""
+          src={LOGO_SRC}
+          alt="Aamantran by Arohan Travels"
           fill
-          sizes="(max-width: 640px) 78px, (max-width: 768px) 84px, 94px"
+          sizes="(max-width: 640px) 90px, 104px"
           className="object-contain object-left"
           priority
+          unoptimized
         />
       </span>
 
@@ -53,15 +58,14 @@ export function Logo({
               isLight ? "text-white" : "text-navy",
             )}
           >
-            SMART SQUAD
+            AAMANTRAN
           </span>
           <span
             className={cn(
-              "mt-1 text-[10px] font-semibold tracking-[0.28em] sm:text-[11px]",
-              isLight ? "text-teal-light" : "text-teal",
+              "mt-1 text-[10px] font-semibold tracking-[0.18em] text-gold sm:text-[11px]",
             )}
           >
-            TRAVELS
+            AROHAN TRAVELS
           </span>
           {showTagline ? (
             <span

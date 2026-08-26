@@ -46,7 +46,7 @@ export function AdminShell({
           <p className="text-xs font-semibold uppercase tracking-[0.2em] text-teal-light">
             Admin
           </p>
-          <p className="mt-1 text-lg font-bold">Smart Squad Travels</p>
+          <p className="mt-1 text-lg font-bold">Arohan Travels</p>
           <p className="mt-2 text-xs text-white/60">Storage: {backendLabel}</p>
         </div>
         <nav className="flex-1 overflow-y-auto px-3 py-4">

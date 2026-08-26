@@ -7,18 +7,18 @@ import type { BlogPost } from "@/content/blog";
 import type { FaqItem } from "@/content/faqs";
 
 export const defaultTitle =
-  "Smart Squad Travels | Luxury Force Traveller & Urbania Rental in Delhi NCR";
+  "Arohan Travels | Luxury Urbania & Force Traveller Rental in Delhi NCR";
 
 export const defaultDescription =
-  "Smart Squad Travels provides luxury and comfortable Force Traveller & Urbania services for family trips, corporate travel, weddings, pilgrimages, airport transfers and customized outstation journeys from Delhi NCR.";
+  "Arohan Travels provides luxury and comfortable Urbania & Force Travellerservices for family trips, corporate travel, weddings, pilgrimages, airport transfers and customized outstation journeys from Delhi NCR.";
 
 /** Light keyword set for secondary engines — keep natural, never stuff into body copy. */
 export const primaryKeywords = [
+  "LuxuryForce Urbania rental",
   "Force Traveller rental Delhi NCR",
   "21 seater Traveller Noida",
   "13 seater Urbania rental",
   "Luxury Force Traveller rental",
-  "Force Urbania rental",
   "group transportation Delhi NCR",
   "outstation Traveller hire",
   "wedding Traveller transport",
