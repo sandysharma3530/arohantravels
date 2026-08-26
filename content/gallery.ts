@@ -1,0 +1,121 @@
+export type GalleryCategory =
+  | "all"
+  | "force-traveller"
+  | "force-urbania"
+  | "interiors"
+  | "exteriors"
+  | "trip-locations"
+  | "weddings"
+  | "corporate"
+  | "religious";
+
+export type GalleryItem = {
+  id: string;
+  src: string;
+  alt: string;
+  caption: string;
+  categories: GalleryCategory[];
+};
+
+export const galleryCategories: { id: GalleryCategory; label: string }[] = [
+  { id: "all", label: "All" },
+  { id: "force-traveller", label: "Force Traveller" },
+  { id: "force-urbania", label: "Force Urbania" },
+  { id: "interiors", label: "Vehicle Interiors" },
+  { id: "exteriors", label: "Vehicle Exteriors" },
+  { id: "trip-locations", label: "Trip Locations" },
+  { id: "weddings", label: "Weddings" },
+  { id: "corporate", label: "Corporate Travel" },
+  { id: "religious", label: "Religious Journeys" },
+];
+
+/**
+ * Replace these placeholder gallery paths with your real photos.
+ * Categories drive the tab filters on /gallery.
+ */
+export const galleryItems: GalleryItem[] = [
+  {
+    id: "g1",
+    src: "/images/fleet/traveller/front-exterior.jpg",
+    alt: "Force Traveller front exterior",
+    caption: "Force Traveller — front exterior",
+    categories: ["force-traveller", "exteriors"],
+  },
+  {
+    id: "g2",
+    src: "/images/fleet/traveller/interior-seating.jpg",
+    alt: "Force Traveller interior seating",
+    caption: "Force Traveller — interior seating",
+    categories: ["force-traveller", "interiors"],
+  },
+  {
+    id: "g3",
+    src: "/images/fleet/traveller/side-exterior.jpg",
+    alt: "Force Traveller side view",
+    caption: "Force Traveller — side exterior",
+    categories: ["force-traveller", "exteriors"],
+  },
+  {
+    id: "g4",
+    src: "/images/fleet/urbania/front-exterior.jpg",
+    alt: "Force Urbania front exterior",
+    caption: "Force Urbania — front exterior",
+    categories: ["force-urbania", "exteriors"],
+  },
+  {
+    id: "g5",
+    src: "/images/fleet/urbania/interior-seating.jpg",
+    alt: "Force Urbania premium interior",
+    caption: "Force Urbania — premium seating",
+    categories: ["force-urbania", "interiors"],
+  },
+  {
+    id: "g6",
+    src: "/images/destinations/nainital.jpg",
+    alt: "Group trip location near Nainital",
+    caption: "Trip location — Nainital",
+    categories: ["trip-locations"],
+  },
+  {
+    id: "g7",
+    src: "/images/destinations/haridwar-rishikesh.jpg",
+    alt: "Religious journey destination Haridwar",
+    caption: "Religious journey — Haridwar & Rishikesh",
+    categories: ["trip-locations", "religious"],
+  },
+  {
+    id: "g8",
+    src: "/images/destinations/jaipur.jpg",
+    alt: "Corporate outing destination Jaipur",
+    caption: "Corporate travel — Jaipur",
+    categories: ["trip-locations", "corporate"],
+  },
+  {
+    id: "g9",
+    src: "/images/destinations/mussoorie.jpg",
+    alt: "Wedding guest travel destination Mussoorie",
+    caption: "Wedding travel context — Mussoorie hills",
+    categories: ["trip-locations", "weddings"],
+  },
+  {
+    id: "g10",
+    src: "/images/fleet/traveller/luggage-space.jpg",
+    alt: "Traveller luggage space",
+    caption: "Force Traveller — luggage space",
+    categories: ["force-traveller", "interiors"],
+  },
+  {
+    id: "g11",
+    src: "/images/destinations/kedarnath.jpg",
+    alt: "Pilgrimage destination Kedarnath",
+    caption: "Religious journey — Kedarnath region",
+    categories: ["trip-locations", "religious"],
+  },
+  {
+    id: "g12",
+    src: "/images/destinations/manali.jpg",
+    alt: "Outstation group travel to Manali",
+    caption: "Trip location — Manali",
+    categories: ["trip-locations", "corporate"],
+  },
+];

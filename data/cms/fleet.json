@@ -1,0 +1,174 @@
+[
+  {
+    "id": "force-traveller",
+    "slug": "force-traveller",
+    "name": "Force Traveller",
+    "shortName": "Traveller",
+    "badge": "21 Seater",
+    "seatingCapacity": 21,
+    "description": "Spacious and comfortable Force Traveller ideal for family trips, corporate outings, weddings, pilgrimages and customized outstation journeys from Delhi NCR.",
+    "features": [
+      "Pushback Seats",
+      "Air Conditioning",
+      "GPS Tracking",
+      "CCTV Camera",
+      "Large Luggage Space",
+      "Music System"
+    ],
+    "coverImage": "/images/uploads/fleet/9n6a7609-1787328182077.webp",
+    "coverAlt": "White 21-seater Force Traveller van for group travel",
+    "owned": false,
+    "available": true,
+    "gallery": [
+      {
+        "id": "tr-front",
+        "src": "/images/uploads/fleet/9n6a7609-1787330028865.webp",
+        "alt": "Force Traveller front exterior view",
+        "caption": "Front exterior",
+        "category": "front-exterior"
+      },
+      {
+        "id": "tr-side",
+        "src": "/images/uploads/fleet/04-1787396116669.webp",
+        "alt": "Force Traveller side exterior profile",
+        "caption": "Side exterior",
+        "category": "side-exterior"
+      },
+      {
+        "id": "tr-rear",
+        "src": "/images/uploads/fleet/9n6a7623-1787396251447.webp",
+        "alt": "Force Traveller rear exterior with luggage door",
+        "caption": "Rear exterior",
+        "category": "rear-exterior"
+      },
+      {
+        "id": "tr-interior",
+        "src": "/images/uploads/fleet/9n6a7620-1787330053212.webp",
+        "alt": "Force Traveller interior pushback seating",
+        "caption": "Interior seating",
+        "category": "interior-seating"
+      },
+      {
+        "id": "tr-cabin",
+        "src": "/images/uploads/fleet/9n6a7628-1787330069855.webp",
+        "alt": "Force Traveller driver cabin",
+        "caption": "Driver cabin",
+        "category": "driver-cabin"
+      },
+      {
+        "id": "tr-ac",
+        "src": "/images/uploads/fleet/02-1787330119451.webp",
+        "alt": "Force Traveller air conditioning vents",
+        "caption": "AC vents",
+        "category": "ac-vents"
+      },
+      {
+        "id": "tr-charge",
+        "src": "/images/uploads/fleet/11-1787330140468.webp",
+        "alt": "USB charging points inside Force Traveller",
+        "caption": "Charging points",
+        "category": "charging-points"
+      },
+      {
+        "id": "tr-luggage",
+        "src": "/images/uploads/fleet/03-1787330173309.webp",
+        "alt": "Force Traveller luggage storage area",
+        "caption": "Luggage space",
+        "category": "luggage-space"
+      },
+      {
+        "id": "tr-gps",
+        "src": "/images/uploads/fleet/9n6a7648-1787330207138.webp",
+        "alt": "GPS tracking and CCTV features in Force Traveller",
+        "caption": "GPS and CCTV",
+        "category": "gps-cctv"
+      }
+    ]
+  },
+  {
+    "id": "force-urbania",
+    "slug": "force-urbania",
+    "name": "Force Urbania",
+    "shortName": "Urbania",
+    "badge": "Premium MPV",
+    "seatingCapacity": 13,
+    "description": "Premium Force Urbania for groups seeking extra comfort, refined interiors and a smoother travel experience on longer outstation journeys.",
+    "features": [
+      "Premium Interiors",
+      "Recliner Seating",
+      "Individual AC Vents",
+      "Extra Leg Space",
+      "USB Charging",
+      "Spacious Luggage Area"
+    ],
+    "coverImage": "/images/uploads/fleet/9n6a7636-1787328214486.webp",
+    "coverAlt": "Force Urbania premium group travel vehicle",
+    "owned": false,
+    "available": true,
+    "gallery": [
+      {
+        "id": "ur-front",
+        "src": "/images/uploads/fleet/9n6a7638-1787328224258.webp",
+        "alt": "Force Urbania front exterior view",
+        "caption": "Front exterior",
+        "category": "front-exterior"
+      },
+      {
+        "id": "ur-side",
+        "src": "/images/uploads/fleet/9n6a7638-1787328246090.webp",
+        "alt": "Force Urbania side exterior profile",
+        "caption": "Side exterior",
+        "category": "side-exterior"
+      },
+      {
+        "id": "ur-rear",
+        "src": "/images/uploads/fleet/9n6a7639-1787328258073.webp",
+        "alt": "Force Urbania rear exterior",
+        "caption": "Rear exterior",
+        "category": "rear-exterior"
+      },
+      {
+        "id": "ur-interior",
+        "src": "/images/uploads/fleet/9n6a7657-1787328274961.webp",
+        "alt": "Force Urbania premium recliner seating",
+        "caption": "Interior seating",
+        "category": "interior-seating"
+      },
+      {
+        "id": "ur-cabin",
+        "src": "/images/uploads/fleet/9n6a7673-1787328296241.webp",
+        "alt": "Force Urbania driver cabin",
+        "caption": "Driver cabin",
+        "category": "driver-cabin"
+      },
+      {
+        "id": "ur-ac",
+        "src": "/images/uploads/fleet/9n6a7662-1787328449257.webp",
+        "alt": "Individual AC vents in Force Urbania",
+        "caption": "Individual AC vents",
+        "category": "ac-vents"
+      },
+      {
+        "id": "ur-charge",
+        "src": "/images/uploads/fleet/9n6a7660-1787328474446.webp",
+        "alt": "USB charging points in Force Urbania",
+        "caption": "USB charging",
+        "category": "charging-points"
+      },
+      {
+        "id": "ur-luggage",
+        "src": "/images/uploads/fleet/9n6a7667-1787396311849.webp",
+        "alt": "Force Urbania luggage storage area",
+        "caption": "Luggage space",
+        "category": "luggage-space"
+      },
+      {
+        "id": "ur-gps",
+        "src": "/images/uploads/fleet/9n6a7670-1787396327064.webp",
+        "alt": "GPS and safety features in Force Urbania",
+        "caption": "GPS and CCTV",
+        "category": "gps-cctv"
+      }
+    ]
+  }
+]

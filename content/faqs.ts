@@ -1,0 +1,52 @@
+/**
+ * FAQ content shown on the homepage and used for FAQPage schema.
+ * Keep answers accurate — do not invent prices, response SLAs, or ownership claims.
+ */
+export type FaqItem = {
+  id: string;
+  question: string;
+  answer: string;
+};
+
+export const faqs: FaqItem[] = [
+  {
+    id: "what-vehicles",
+    question: "Which vehicles does Smart Squad Travels offer?",
+    answer:
+      "We arrange comfortable group transportation with Force Traveller (21-seater) and Force Urbania options, based on availability and your passenger count. Request a custom quote for your preferred vehicle.",
+  },
+  {
+    id: "fixed-packages",
+    question: "Do you sell fixed tour packages with set prices?",
+    answer:
+      "No. We do not sell fixed tour packages with package prices, hotel inclusions or set durations. Destinations are locations we serve — every trip is planned around your dates, route and group size with a customized quotation.",
+  },
+  {
+    id: "service-areas",
+    question: "Which areas do you serve?",
+    answer:
+      "Primary pickup areas include Noida, Greater Noida and Delhi NCR, with outstation journeys across North India including Uttarakhand, Himachal Pradesh, Rajasthan, Uttar Pradesh and Jammu & Kashmir.",
+  },
+  {
+    id: "how-to-book",
+    question: "How do I request a quotation?",
+    answer:
+      "Use the Quick Enquiry form on the website, or contact us by phone or WhatsApp with your travel date, pickup location, destination, passenger count and preferred vehicle. We will review your request and get back to you shortly.",
+  },
+  {
+    id: "trip-types",
+    question: "What types of trips can you support?",
+    answer:
+      "We support family and group trips, corporate travel, wedding transportation, airport transfers, religious journeys, school and college trips, and customized outstation travel.",
+  },
+  {
+    id: "safety-features",
+    question: "What comfort and safety features are available?",
+    answer:
+      "Depending on the assigned vehicle, features typically include air conditioning, pushback or recliner seating, GPS tracking, CCTV on equipped vehicles, luggage space and charging points where available. Confirm preferred features when you request a quote.",
+  },
+];
+
+export function getFaqs() {
+  return faqs;
+}

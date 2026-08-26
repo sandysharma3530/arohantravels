@@ -1,26 +1,173 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --navy: #061b36;
+  --navy-secondary: #0a2540;
+  --teal: #00b8c4;
+  --teal-light: #32d5d2;
+  --white: #ffffff;
+  --bg-light: #f7fafc;
+  --gold: #d4af37;
+  --text-main: #10233d;
+  --text-muted: #667085;
+  --radius: 0.75rem;
+  --shadow-soft: 0 10px 30px rgba(6, 27, 54, 0.08);
+  --header-height: 5.5rem;
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-navy: var(--navy);
+  --color-navy-secondary: var(--navy-secondary);
+  --color-teal: var(--teal);
+  --color-teal-light: var(--teal-light);
+  --color-bg-light: var(--bg-light);
+  --color-gold: var(--gold);
+  --color-text-main: var(--text-main);
+  --color-text-muted: var(--text-muted);
+  --color-white: #ffffff;
+  --color-black: #000000;
+  --font-heading: var(--font-heading);
+  --font-body: var(--font-body);
+  --shadow-soft: var(--shadow-soft);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
   }
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: var(--white);
+  color: var(--text-main);
+  font-family: var(--font-body), system-ui, sans-serif;
+  line-height: 1.6;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-heading), system-ui, sans-serif;
+  line-height: 1.2;
+  /* Do not force color here — dark overlays need text-white to win */}
+
+a {
+  /* Do not set color here — unlayered `color: inherit` overrides Tailwind
+     utilities and made navy-header nav links invisible. */
+  text-decoration: none;
+}
+
+/* Header inherits light text so nav links stay readable on navy */
+.site-header {
+  color: #ffffff;
+}
+
+.site-header nav a {
+  color: #ffffff;
+}
+
+.site-header nav a[aria-current="page"] {
+  color: #32d5d2;
+}
+
+:focus-visible {
+  outline: 2px solid var(--teal);
+  outline-offset: 2px;
+}
+
+.container-site {
+  width: min(100% - 2rem, 1200px);
+  margin-inline: auto;
+}
+
+.section-pad {
+  padding-block: 4rem;
+}
+
+@media (min-width: 768px) {
+  .section-pad {
+    padding-block: 5rem;
+  }
+}
+
+.text-balance {
+  text-wrap: balance;
+}
+
+a.skip-link {
+  position: absolute;
+  left: -9999px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  z-index: 100;
+}
+
+a.skip-link:focus {
+  left: 1rem;
+  top: 1rem;
+  width: auto;
+  height: auto;
+  overflow: visible;
+  padding: 0.75rem 1rem;
+  border-radius: 0.75rem;
+  background: var(--teal);
+  color: white;
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+
+/* Header navigation — guaranteed contrast on navy (beat any utility/cascade) */
+.site-header .site-nav-link,
+.site-header .site-nav-link:visited {
+  color: #ffffff !important;
+}
+
+.site-header .site-nav-link:hover {
+  color: #e8fffe !important;
+}
+
+.site-header .site-nav-link-active,
+.site-header .site-nav-link[aria-current="page"] {
+  color: #32d5d2 !important;
+  text-decoration: underline;
+  text-decoration-color: #00b8c4;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 10px;
+}
+
+.site-header a[href^="mailto:"],
+.site-header a[aria-label="Facebook"],
+.site-header a[aria-label="Instagram"],
+.site-header a[aria-label="YouTube"] {
+  color: #ffffff !important;
+}
+
+.mobile-nav-link,
+.mobile-nav-link:visited {
+  color: #ffffff !important;
+}
+
+.mobile-nav-link[aria-current="page"] {
+  color: #32d5d2 !important;
 }

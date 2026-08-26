@@ -1,0 +1,101 @@
+{
+  "businessName": "Smart Squad Travels",
+  "tagline": "Travel Smart. Travel Together.",
+  "legalName": "Smart Squad Travels",
+  "shortDescription": "Comfortable group transportation and Traveller rental services for family trips, corporate travel, weddings, pilgrimages, airport transfers and customized outstation journeys across Delhi NCR and North India.",
+  "phoneDisplay": "+91 72178 44634",
+  "phoneInternational": "+917217844634",
+  "whatsappNumber": "917217844634",
+  "email": "smartsquadtravels@gmail.com",
+  "publicEmail": "smartsquadtravels@gmail.com",
+  "address": {
+    "line1": " Sector 16B Rd, Panchsheel Greens,",
+    "line2": " Ghaziabad, ",
+    "city": "Greater Noida",
+    "state": "Uttar Pradesh",
+    "postalCode": "201009",
+    "country": "India",
+    "full": "1, Plot No, Tyagi Market, Sector 16B Rd, Panchsheel Greens, Ghaziabad, Greater Noida, Uttar Pradesh 201009"
+  },
+  "serviceAreas": [
+    "Noida",
+    "Greater Noida",
+    "Delhi NCR",
+    "Uttarakhand",
+    "Himachal Pradesh",
+    "Rajasthan",
+    "Uttar Pradesh",
+    "Jammu & Kashmir"
+  ],
+  "businessHours": {
+    "display": "Open 24x7 for enquiry and travel support",
+    "weekdays": "24 hours",
+    "weekends": "24 hours"
+  },
+  "mapEmbedUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3502.7066984412263!2d77.4426642263091!3d28.608574525677916!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cef34d9e2e6bf%3A0xdcb56cfb41fb085e!2sSmart%20Squad%20Travels!5e0!3m2!1sen!2sin!4v1787402179904!5m2!1sen!2sin",
+  "social": {
+    "facebookUrl": "https://www.facebook.com/p/SmartSquad-Travels-61591439712482/",
+    "instagramUrl": "https://www.instagram.com/smartsquadtravels/",
+    "youtubeUrl": "https://www.youtube.com/@REPLACE_YOUTUBE_CHANNEL"
+  },
+  "googleBusinessUrl": "https://g.page/smartsquadtravels",
+  "googleReviewUrl": "https://g.page/r/CV4I-0H7bLXcEBM/review",
+  "ownedFleet": {
+    "forceTraveller": false,
+    "forceUrbania": false
+  },
+  "availableFleet": {
+    "forceTraveller": true,
+    "forceUrbania": true
+  },
+  "trustStatistics": {
+    "googleRating": null,
+    "googleReviewCount": null,
+    "yearsOfExperience": null,
+    "tripsCompleted": null
+  },
+  "primaryVehicle": "21-Seater Force Traveller",
+  "siteUrl": "https://www.smartsquadtravels.com",
+  "nav": [
+    {
+      "label": "Home",
+      "href": "/",
+      "enabled": true
+    },
+    {
+      "label": "About Us",
+      "href": "/about",
+      "enabled": true
+    },
+    {
+      "label": "Fleet",
+      "href": "/fleet",
+      "enabled": true
+    },
+    {
+      "label": "Destinations",
+      "href": "/destinations",
+      "enabled": true
+    },
+    {
+      "label": "Gallery",
+      "href": "/gallery",
+      "enabled": true
+    },
+    {
+      "label": "Reviews",
+      "href": "/reviews",
+      "enabled": false
+    },
+    {
+      "label": "Blog",
+      "href": "/blog",
+      "enabled": false
+    },
+    {
+      "label": "Contact Us",
+      "href": "/contact",
+      "enabled": true
+    }
+  ]
+}

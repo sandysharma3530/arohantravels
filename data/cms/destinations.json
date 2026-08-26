@@ -1,0 +1,497 @@
+[
+  {
+    "slug": "tungnath-chopta",
+    "name": "Tungnath & Chopta",
+    "region": "Uttarakhand",
+    "shortDescription": "Scenic hill destination known for Tungnath Temple and Chopta meadows.",
+    "introduction": "Chopta and Tungnath attract travellers seeking mountain views, temple visits and peaceful highland scenery. Smart Squad Travels provides comfortable group transportation from Delhi NCR for customized journeys to this region.",
+    "highlights": [
+      "Tungnath Temple trail access",
+      "Chopta meadow landscapes",
+      "Cool mountain climate",
+      "Ideal for small to mid-size groups"
+    ],
+    "recommendedMonths": "March–June and September–November (weather dependent)",
+    "suggestedDuration": "Typically 2–4 days for a relaxed itinerary — fully customizable based on your group",
+    "roadTravelNotes": "Hill roads require careful planning around weather, daylight driving and rest stops. Share your preferred pace so we can suggest a sensible travel plan.",
+    "suitableFor": [
+      "Family groups",
+      "Friends",
+      "Pilgrimage groups",
+      "Corporate outings"
+    ],
+    "recommendedVehicles": [
+      "force-traveller",
+      "force-urbania"
+    ],
+    "nearbyPlaces": [
+      "Kedarnath",
+      "Rudraprayag",
+      "Ukhimath"
+    ],
+    "coverImage": "/images/destinations/tungnath-chopta.jpg",
+    "coverAlt": "Mountain meadows near Tungnath and Chopta in Uttarakhand",
+    "gallery": [
+      {
+        "src": "/images/destinations/tungnath-chopta.jpg",
+        "alt": "Chopta hillside landscape",
+        "caption": "Chopta scenery"
+      }
+    ],
+    "featuredOnHome": true,
+    "homeOrder": 1
+  },
+  {
+    "slug": "nainital",
+    "name": "Nainital",
+    "region": "Uttarakhand",
+    "shortDescription": "Popular lake town and weekend getaway from Delhi NCR.",
+    "introduction": "Nainital is a classic North India hill destination around Naini Lake, with viewpoints, markets and nearby lakes. Request a custom quote for comfortable Traveller transportation from Noida, Greater Noida or Delhi.",
+    "highlights": [
+      "Naini Lake",
+      "Mall Road",
+      "Viewpoints and nearby lakes",
+      "Family-friendly getaway"
+    ],
+    "recommendedMonths": "March–June and September–November",
+    "suggestedDuration": "Typically 2–3 days — customizable for your group",
+    "roadTravelNotes": "Expect winding hill roads. Early morning departures from Delhi NCR often work well for day-one comfort.",
+    "suitableFor": [
+      "Families",
+      "Couples traveling in groups",
+      "School trips",
+      "Corporate teams"
+    ],
+    "recommendedVehicles": [
+      "force-traveller",
+      "force-urbania"
+    ],
+    "nearbyPlaces": [
+      "Bhimtal",
+      "Sattal",
+      "Mukteshwar"
+    ],
+    "coverImage": "/images/destinations/nainital.jpg",
+    "coverAlt": "Nainital lake surrounded by hills",
+    "gallery": [
+      {
+        "src": "/images/destinations/nainital.jpg",
+        "alt": "Nainital lake view",
+        "caption": "Naini Lake area"
+      }
+    ],
+    "featuredOnHome": true,
+    "homeOrder": 2
+  },
+  {
+    "slug": "mussoorie",
+    "name": "Mussoorie",
+    "region": "Uttarakhand",
+    "shortDescription": "Queen of the Hills — viewpoints, walks and cool weather.",
+    "introduction": "Mussoorie offers hill-station charm close to Dehradun, with promenades, viewpoints and nearby waterfalls. We arrange group vehicle travel tailored to your dates and passenger count.",
+    "highlights": [
+      "Mall Road",
+      "Gun Hill / viewpoints",
+      "Kempty Falls area",
+      "Pleasant hill climate"
+    ],
+    "recommendedMonths": "March–June and September–November",
+    "suggestedDuration": "Typically 2–3 days — adjust to your schedule",
+    "roadTravelNotes": "Traffic near popular spots can increase on weekends and holidays. Flexible pickup timing helps.",
+    "suitableFor": [
+      "Families",
+      "Friends",
+      "Corporate getaways"
+    ],
+    "recommendedVehicles": [
+      "force-traveller",
+      "force-urbania"
+    ],
+    "nearbyPlaces": [
+      "Dehradun",
+      "Dhanaulti",
+      "Haridwar"
+    ],
+    "coverImage": "/images/destinations/mussoorie.jpg",
+    "coverAlt": "Mussoorie hill station panoramic view",
+    "gallery": [
+      {
+        "src": "/images/destinations/mussoorie.jpg",
+        "alt": "Mussoorie hills",
+        "caption": "Mussoorie hills"
+      }
+    ],
+    "featuredOnHome": true,
+    "homeOrder": 3
+  },
+  {
+    "slug": "kedarnath",
+    "name": "Kedarnath",
+    "region": "Uttarakhand",
+    "shortDescription": "Sacred Himalayan pilgrimage destination.",
+    "introduction": "Kedarnath is an important pilgrimage destination in Uttarakhand. Smart Squad Travels supports group road travel planning up to feasible roadheads based on season, regulations and passenger needs.",
+    "highlights": [
+      "Pilgrimage journey planning",
+      "Group coordination",
+      "Seasonal route awareness",
+      "Comfortable road travel"
+    ],
+    "recommendedMonths": "Typically May–October (official yatra season varies yearly)",
+    "suggestedDuration": "Often 3–5 days depending on route and rest needs — fully customizable",
+    "roadTravelNotes": "Access depends on open routes, weather and local guidelines. Share travel dates early so we can advise practical pickup and drop options.",
+    "suitableFor": [
+      "Pilgrimage groups",
+      "Families",
+      "Senior-friendly groups with planning"
+    ],
+    "recommendedVehicles": [
+      "force-traveller"
+    ],
+    "nearbyPlaces": [
+      "Gaurikund",
+      "Sonprayag",
+      "Rudraprayag"
+    ],
+    "coverImage": "/images/destinations/kedarnath.jpg",
+    "coverAlt": "Kedarnath temple area in the Himalayas",
+    "gallery": [
+      {
+        "src": "/images/destinations/kedarnath.jpg",
+        "alt": "Kedarnath landscape",
+        "caption": "Kedarnath region"
+      }
+    ],
+    "featuredOnHome": true,
+    "homeOrder": 4
+  },
+  {
+    "slug": "haridwar-rishikesh",
+    "name": "Haridwar & Rishikesh",
+    "region": "Uttarakhand",
+    "shortDescription": "Spiritual ghats, Ganga aarti and riverside experiences.",
+    "introduction": "Haridwar and Rishikesh are among the most requested destinations from Delhi NCR for spiritual visits, family trips and weekend getaways. Ask for a custom Traveller quote based on your group size.",
+    "highlights": [
+      "Har Ki Pauri",
+      "Ganga Aarti",
+      "Rishikesh riverside areas",
+      "Easy weekend destination"
+    ],
+    "recommendedMonths": "October–March for cooler weather; year-round for pilgrimages",
+    "suggestedDuration": "Typically 1–3 days — customizable",
+    "roadTravelNotes": "Well-connected from Delhi NCR. Festival days may mean heavier traffic near ghats.",
+    "suitableFor": [
+      "Families",
+      "Pilgrimage groups",
+      "Corporate teams",
+      "School groups"
+    ],
+    "recommendedVehicles": [
+      "force-traveller",
+      "force-urbania"
+    ],
+    "nearbyPlaces": [
+      "Dehradun",
+      "Mussoorie",
+      "Neelkanth"
+    ],
+    "coverImage": "/images/destinations/haridwar-rishikesh.jpg",
+    "coverAlt": "Ganga riverfront at Haridwar and Rishikesh",
+    "gallery": [
+      {
+        "src": "/images/destinations/haridwar-rishikesh.jpg",
+        "alt": "Haridwar ghat evening view",
+        "caption": "Haridwar & Rishikesh"
+      }
+    ],
+    "featuredOnHome": true,
+    "homeOrder": 5
+  },
+  {
+    "slug": "manali",
+    "name": "Manali",
+    "region": "Himachal Pradesh",
+    "shortDescription": "Popular Himalayan destination for group holidays.",
+    "introduction": "Manali is a favourite for longer group holidays from Delhi NCR. We help plan comfortable Force Traveller or Urbania travel around your preferred dates and passenger count — without fixed package pricing.",
+    "highlights": [
+      "Mountain scenery",
+      "Solang / nearby valleys",
+      "Mall Road area",
+      "Group holiday favourite"
+    ],
+    "recommendedMonths": "March–June and October–February (season preferences vary)",
+    "suggestedDuration": "Typically 4–6 days for a relaxed trip — customizable",
+    "roadTravelNotes": "Longer highway and hill stretches. Overnight or early starts are common for comfort.",
+    "suitableFor": [
+      "Friends",
+      "Families",
+      "Corporate outings"
+    ],
+    "recommendedVehicles": [
+      "force-traveller",
+      "force-urbania"
+    ],
+    "nearbyPlaces": [
+      "Kullu",
+      "Solang Valley",
+      "Kasol"
+    ],
+    "coverImage": "/images/destinations/manali.jpg",
+    "coverAlt": "Manali mountain valley landscape",
+    "gallery": [
+      {
+        "src": "/images/destinations/manali.jpg",
+        "alt": "Manali hills",
+        "caption": "Manali"
+      }
+    ],
+    "featuredOnHome": true,
+    "homeOrder": 6
+  },
+  {
+    "slug": "shimla",
+    "name": "Shimla",
+    "region": "Himachal Pradesh",
+    "shortDescription": "Colonial hill capital with malls, viewpoints and cool air.",
+    "introduction": "Shimla remains a classic Himachal destination for families and groups. Request a tailored quotation for pickup from Noida, Greater Noida or Delhi.",
+    "highlights": [
+      "The Ridge & Mall Road",
+      "Viewpoints",
+      "Family-friendly hills",
+      "Weekend or extended stays"
+    ],
+    "recommendedMonths": "March–June and September–November",
+    "suggestedDuration": "Typically 3–5 days — adjust as needed",
+    "roadTravelNotes": "Popular weekends can be busy. Sharing flexible timings helps with smoother travel.",
+    "suitableFor": [
+      "Families",
+      "School trips",
+      "Corporate groups"
+    ],
+    "recommendedVehicles": [
+      "force-traveller",
+      "force-urbania"
+    ],
+    "nearbyPlaces": [
+      "Kufri",
+      "Chail",
+      "Kasauli"
+    ],
+    "coverImage": "/images/destinations/shimla.jpg",
+    "coverAlt": "Shimla town in the hills",
+    "gallery": [
+      {
+        "src": "/images/destinations/shimla.jpg",
+        "alt": "Shimla hillside town",
+        "caption": "Shimla"
+      }
+    ],
+    "featuredOnHome": true,
+    "homeOrder": 7
+  },
+  {
+    "slug": "jaipur",
+    "name": "Jaipur",
+    "region": "Rajasthan",
+    "shortDescription": "Pink City forts, bazaars and heritage sightseeing.",
+    "introduction": "Jaipur is ideal for heritage-focused group travel from Delhi NCR. We provide Traveller transportation so your group can explore at a comfortable pace with a custom travel plan.",
+    "highlights": [
+      "Amer Fort area",
+      "City Palace vicinity",
+      "Bazaars and heritage sites",
+      "Day or multi-day options"
+    ],
+    "recommendedMonths": "October–March for pleasant weather",
+    "suggestedDuration": "Typically 1–3 days — fully customizable",
+    "roadTravelNotes": "Mostly highway travel from Delhi NCR. Early starts help maximize sightseeing time.",
+    "suitableFor": [
+      "Families",
+      "Corporate teams",
+      "Wedding guest transfers",
+      "School groups"
+    ],
+    "recommendedVehicles": [
+      "force-traveller",
+      "force-urbania"
+    ],
+    "nearbyPlaces": [
+      "Pushkar",
+      "Ajmer",
+      "Agra"
+    ],
+    "coverImage": "/images/destinations/jaipur.jpg",
+    "coverAlt": "Jaipur fort and pink city architecture",
+    "gallery": [
+      {
+        "src": "/images/destinations/jaipur.jpg",
+        "alt": "Jaipur heritage architecture",
+        "caption": "Jaipur"
+      }
+    ],
+    "featuredOnHome": true,
+    "homeOrder": 8
+  },
+  {
+    "slug": "jammu-kashmir",
+    "name": "Jammu & Kashmir",
+    "region": "Jammu & Kashmir",
+    "shortDescription": "Scenic valleys and memorable group journeys.",
+    "introduction": "Jammu & Kashmir offers dramatic landscapes for carefully planned group travel. Share your preferred cities, dates and passenger count for a customized transportation quotation.",
+    "highlights": [
+      "Scenic valleys",
+      "Custom multi-city planning",
+      "Group travel coordination",
+      "Seasonal route guidance"
+    ],
+    "recommendedMonths": "April–October for many valley routes (confirm seasonally)",
+    "suggestedDuration": "Often 5–8 days depending on cities covered — customizable",
+    "roadTravelNotes": "Longer journeys may need staged travel and weather awareness. We plan around practical driving days.",
+    "suitableFor": [
+      "Families",
+      "Friends",
+      "Corporate incentive groups"
+    ],
+    "recommendedVehicles": [
+      "force-traveller",
+      "force-urbania"
+    ],
+    "nearbyPlaces": [
+      "Srinagar",
+      "Gulmarg",
+      "Pahalgam",
+      "Jammu"
+    ],
+    "coverImage": "/images/destinations/jammu-kashmir.jpg",
+    "coverAlt": "Scenic valley landscape in Jammu and Kashmir",
+    "gallery": [
+      {
+        "src": "/images/destinations/jammu-kashmir.jpg",
+        "alt": "Kashmir valley scenery",
+        "caption": "Jammu & Kashmir"
+      }
+    ],
+    "featuredOnHome": true,
+    "homeOrder": 9
+  },
+  {
+    "slug": "ayodhya",
+    "name": "Ayodhya",
+    "region": "Uttar Pradesh",
+    "shortDescription": "Important spiritual destination for group pilgrimages.",
+    "introduction": "Ayodhya is a key spiritual destination in Uttar Pradesh. Smart Squad Travels arranges comfortable group transportation from Delhi NCR based on your travel date and group size.",
+    "highlights": [
+      "Pilgrimage travel",
+      "Group-friendly planning",
+      "Door-to-door options",
+      "Flexible timing"
+    ],
+    "recommendedMonths": "October–March preferred; year-round for pilgrimages",
+    "suggestedDuration": "Typically 1–3 days — customizable",
+    "roadTravelNotes": "Festival periods can be crowded. Booking travel windows early is recommended.",
+    "suitableFor": [
+      "Pilgrimage groups",
+      "Families",
+      "Senior groups with planning"
+    ],
+    "recommendedVehicles": [
+      "force-traveller"
+    ],
+    "nearbyPlaces": [
+      "Lucknow",
+      "Prayagraj",
+      "Varanasi"
+    ],
+    "coverImage": "/images/destinations/ayodhya.jpg",
+    "coverAlt": "Ayodhya temple and city skyline",
+    "gallery": [
+      {
+        "src": "/images/destinations/ayodhya.jpg",
+        "alt": "Ayodhya spiritual destination",
+        "caption": "Ayodhya"
+      }
+    ],
+    "featuredOnHome": false,
+    "homeOrder": 10
+  },
+  {
+    "slug": "mathura-vrindavan",
+    "name": "Mathura & Vrindavan",
+    "region": "Uttar Pradesh",
+    "shortDescription": "Krishna bhakti destinations close to Delhi NCR.",
+    "introduction": "Mathura and Vrindavan are popular for day trips and short pilgrimages from Delhi NCR. Request a quote for Force Traveller group travel tailored to your schedule.",
+    "highlights": [
+      "Temple visits",
+      "Day-trip friendly distance",
+      "Family pilgrimage option",
+      "Flexible same-day or overnight plans"
+    ],
+    "recommendedMonths": "October–March; festivals have special crowds",
+    "suggestedDuration": "Often 1–2 days — customizable",
+    "roadTravelNotes": "Relatively accessible from Delhi NCR. Festival days may need extra buffer time.",
+    "suitableFor": [
+      "Families",
+      "Pilgrimage groups",
+      "School groups"
+    ],
+    "recommendedVehicles": [
+      "force-traveller",
+      "force-urbania"
+    ],
+    "nearbyPlaces": [
+      "Agra",
+      "Govardhan",
+      "Barsana"
+    ],
+    "coverImage": "/images/destinations/mathura-vrindavan.jpg",
+    "coverAlt": "Temples in Mathura and Vrindavan",
+    "gallery": [
+      {
+        "src": "/images/destinations/mathura-vrindavan.jpg",
+        "alt": "Mathura Vrindavan temples",
+        "caption": "Mathura & Vrindavan"
+      }
+    ],
+    "featuredOnHome": false,
+    "homeOrder": 11
+  },
+  {
+    "slug": "jim-corbett",
+    "name": "Jim Corbett",
+    "region": "Uttarakhand",
+    "shortDescription": "Wildlife reserve getaways for nature-focused groups.",
+    "introduction": "Jim Corbett is popular for nature escapes and weekend group travel from Delhi NCR. We provide Traveller transportation to your preferred gate or stay area based on availability and plans.",
+    "highlights": [
+      "Nature getaway",
+      "Weekend-friendly distance",
+      "Group coordination",
+      "Custom pickup points"
+    ],
+    "recommendedMonths": "November–June (park zones and activities vary by season)",
+    "suggestedDuration": "Typically 2–3 days — customizable",
+    "roadTravelNotes": "Confirm stay location and gate access. Early departures help maximize daylight on arrival day.",
+    "suitableFor": [
+      "Families",
+      "Friends",
+      "Corporate offsites"
+    ],
+    "recommendedVehicles": [
+      "force-traveller",
+      "force-urbania"
+    ],
+    "nearbyPlaces": [
+      "Ramnagar",
+      "Nainital",
+      "Ranikhet"
+    ],
+    "coverImage": "/images/destinations/jim-corbett.jpg",
+    "coverAlt": "Forest landscape near Jim Corbett National Park",
+    "gallery": [
+      {
+        "src": "/images/destinations/jim-corbett.jpg",
+        "alt": "Jim Corbett forest scenery",
+        "caption": "Jim Corbett"
+      }
+    ],
+    "featuredOnHome": false,
+    "homeOrder": 12
+  }
+]

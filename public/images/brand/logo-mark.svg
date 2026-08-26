@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Smart Squad Travels">
+  <rect width="64" height="64" rx="14" fill="#FFFFFF"/>
+  <rect x="1.5" y="1.5" width="61" height="61" rx="12.5" fill="none" stroke="#E8EEF4" stroke-width="1"/>
+  <path d="M10 42c6-14 16-22 22-24 6 2 16 10 22 24" fill="#F3FBFC"/>
+  <circle cx="42" cy="20" r="7" fill="#F5B942"/>
+  <g stroke="#F5B942" stroke-width="1.6" stroke-linecap="round">
+    <path d="M42 9.5v-2.2"/><path d="M42 34.7v-2.2"/><path d="M51.5 20h2.2"/><path d="M30.3 20h2.2"/>
+    <path d="M48.8 13.2l1.6-1.6"/><path d="M33.6 28.4l1.6-1.6"/><path d="M48.8 26.8l1.6 1.6"/><path d="M33.6 11.6l1.6 1.6"/>
+  </g>
+  <g transform="translate(18 28)">
+    <path d="M0-14 L3.2-3.2 L0 0 Z" fill="#C9A227"/>
+    <path d="M0-14 L-3.2-3.2 L0 0 Z" fill="#061B36"/>
+    <path d="M0 14 L3.2 3.2 L0 0 Z" fill="#061B36"/>
+    <path d="M0 14 L-3.2 3.2 L0 0 Z" fill="#C9A227"/>
+    <path d="M14 0 L3.2-3.2 L0 0 Z" fill="#C9A227"/>
+    <path d="M14 0 L3.2 3.2 L0 0 Z" fill="#061B36"/>
+    <path d="M-14 0 L-3.2-3.2 L0 0 Z" fill="#061B36"/>
+    <path d="M-14 0 L-3.2 3.2 L0 0 Z" fill="#C9A227"/>
+    <circle cx="0" cy="0" r="2.2" fill="#00B8C4"/>
+    <circle cx="0" cy="0" r="1" fill="#FFFFFF"/>
+  </g>
+  <text x="18" y="12.5" text-anchor="middle" font-family="system-ui,Segoe UI,sans-serif" font-size="7" font-weight="800" fill="#061B36">N</text>
+  <g transform="translate(28 34)">
+    <path d="M2 12 h22 c1.2 0 2-.8 2-2 V7.2 c0-.7-.3-1.3-.8-1.7 L21.5 2.8c-.4-.4-1-.6-1.5-.6H8.2c-.6 0-1.1.3-1.5.7L4.2 5.8c-.3.4-.5.9-.5 1.4V10c0 1.1.9 2 2 2z" fill="#D4AF37"/>
+    <path d="M8.4 2.4 h11.2 c.4 0 .8.2 1 .5l2.6 3.4c.1.2 0 .4-.2.4H7.4c-.2 0-.3-.2-.2-.4l1-.3.4-3.2c0-.4.4-.7.8-.7z" fill="#0A2540" opacity="0.9"/>
+    <rect x="9" y="3.2" width="3.2" height="2.6" rx="0.4" fill="#7DD3DA"/>
+    <rect x="13" y="3.2" width="3.2" height="2.6" rx="0.4" fill="#7DD3DA"/>
+    <rect x="17" y="3.2" width="3.2" height="2.6" rx="0.4" fill="#7DD3DA"/>
+    <path d="M4.5 6.2 h2.8 v2.2 H4.8z" fill="#7DD3DA"/>
+    <circle cx="8.2" cy="12.2" r="2.35" fill="#061B36"/>
+    <circle cx="8.2" cy="12.2" r="1" fill="#E8EEF4"/>
+    <circle cx="20.5" cy="12.2" r="2.35" fill="#061B36"/>
+    <circle cx="20.5" cy="12.2" r="1" fill="#E8EEF4"/>
+  </g>
+  <path d="M8 52c10-3 18-4 24-4s14 1 24 4" fill="none" stroke="#061B36" stroke-width="2.4" stroke-linecap="round" opacity="0.85"/>
+  <path d="M14 52c8-1.6 14-2.2 18-2.2s10 .6 18 2.2" fill="none" stroke="#00B8C4" stroke-width="1.2" stroke-linecap="round"/>
+</svg>

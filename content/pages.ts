@@ -1,0 +1,13 @@
+export const defaultPages = {
+  aboutParagraphs: [
+    "Smart Squad Travels helps families, corporates, wedding organisers and pilgrimage groups travel together with comfortable Force Traveller and Force Urbania options. We focus on clear communication, customized quotations and dependable coordination — not fixed tour packages with hidden add-ons.",
+    "Whether you need airport transfers, wedding guest transportation, a corporate outing or a multi-day outstation journey, we work with your dates, passenger count and route preferences to suggest a practical travel plan.",
+    "Enquiries are handled with transparent pricing conversations so you know what to expect before you confirm.",
+  ],
+  contactIntro:
+    "Share your travel dates, pickup point, destination and group size. We will review your request and send a customized quotation.",
+  privacyLastUpdated: "15 August 2026",
+  privacyBody: "",
+  termsLastUpdated: "15 August 2026",
+  termsBody: "",
+};
