@@ -1,19 +1,34 @@
 import { cache } from "react";
-import { unstable_noStore as noStore } from "next/cache";
+import { revalidatePath, revalidateTag, unstable_cache } from "next/cache";
 import { readBundle } from "@/lib/cms/store";
 import { getSeedBundle } from "@/lib/cms/seed";
 import { sanitizePublicBundle } from "@/lib/cms/sanitize";
 import { isNavHrefEnabled, type CmsBundle } from "@/lib/cms/types";
 
-async function loadPublishedBundle(): Promise<CmsBundle> {
-  const { bundle } = await readBundle({ includeDrafts: false });
-  return sanitizePublicBundle(bundle);
+export const CMS_CACHE_TAG = "cms-public";
+
+const loadCachedPublishedBundle = unstable_cache(
+  async () => {
+    const { bundle } = await readBundle({ includeDrafts: false });
+    return sanitizePublicBundle(bundle);
+  },
+  ["cms-public-bundle"],
+  { tags: [CMS_CACHE_TAG], revalidate: 60 },
+);
+
+/** Bust public CMS data and page caches after a publish/reset. */
+export function revalidatePublicContent() {
+  revalidateTag(CMS_CACHE_TAG);
+  revalidatePath("/", "layout");
+  revalidatePath("/manifest.webmanifest");
+  revalidatePath("/icon");
+  revalidatePath("/apple-icon");
 }
 
 /** Published content only — safe for generateStaticParams and build. */
 export async function getPublishedContent(): Promise<CmsBundle> {
   try {
-    return await loadPublishedBundle();
+    return await loadCachedPublishedBundle();
   } catch (error) {
     console.error("[cms] published load failed; using seed", error);
     return sanitizePublicBundle(getSeedBundle());
@@ -22,7 +37,6 @@ export async function getPublishedContent(): Promise<CmsBundle> {
 
 /** Public site always uses published content (never drafts). */
 export const getPublicContent = cache(async (): Promise<CmsBundle> => {
-  noStore();
   try {
     return await getPublishedContent();
   } catch (error) {

@@ -7,6 +7,7 @@ import {
   type ImageUploadFolder,
   type ImageUploadVariant,
 } from "@/lib/cms/image-optimize";
+import { generateBrandAssets } from "@/lib/cms/brand-assets";
 import { assertPersistentBackend } from "@/lib/supabase";
 
 export const runtime = "nodejs";
@@ -18,6 +19,7 @@ const FOLDERS = new Set<ImageUploadFolder>([
   "blog",
   "hero",
   "uploads",
+  "brand",
 ]);
 
 const VARIANTS = new Set<ImageUploadVariant>([
@@ -25,6 +27,7 @@ const VARIANTS = new Set<ImageUploadVariant>([
   "gallery",
   "hero",
   "general",
+  "brand",
 ]);
 
 function parseFolder(value: FormDataEntryValue | null): ImageUploadFolder {
@@ -89,6 +92,65 @@ export async function POST(request: Request) {
       }
 
       const input = Buffer.from(await file.arrayBuffer());
+
+      if (variant === "brand") {
+        const assets = await generateBrandAssets(input);
+        const [logo, icon, icon192, appleIcon] = await Promise.all([
+          storeOptimizedImage({
+            buffer: assets.logo.buffer,
+            folder: "brand",
+            originalName: `${file.name}-logo`,
+            contentType: "image/webp",
+            extension: "webp",
+          }),
+          storeOptimizedImage({
+            buffer: assets.icon512,
+            folder: "brand",
+            originalName: `${file.name}-icon-512`,
+            contentType: "image/png",
+            extension: "png",
+          }),
+          storeOptimizedImage({
+            buffer: assets.icon192,
+            folder: "brand",
+            originalName: `${file.name}-icon-192`,
+            contentType: "image/png",
+            extension: "png",
+          }),
+          storeOptimizedImage({
+            buffer: assets.appleIcon,
+            folder: "brand",
+            originalName: `${file.name}-apple`,
+            contentType: "image/png",
+            extension: "png",
+          }),
+        ]);
+
+        return NextResponse.json({
+          ok: true,
+          files: [
+            {
+              url: logo.url,
+              width: assets.logo.width,
+              height: assets.logo.height,
+              bytes: assets.logo.bytes,
+              quality: 90,
+              storage: logo.storage,
+              originalName: file.name,
+            },
+          ],
+          url: logo.url,
+          branding: {
+            logo: logo.url,
+            icon: icon.url,
+            icon192: icon192.url,
+            appleIcon: appleIcon.url,
+            width: assets.logo.width,
+            height: assets.logo.height,
+          },
+        });
+      }
+
       const optimized = await optimizeImageBuffer(input, variant);
       const stored = await storeOptimizedImage({
         buffer: optimized.buffer,

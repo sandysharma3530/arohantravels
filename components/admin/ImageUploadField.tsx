@@ -16,7 +16,7 @@ type UploadResult = {
 type ImageUploadFieldProps = {
   label: string;
   hint?: string;
-  folder: "destinations" | "fleet" | "gallery" | "blog" | "hero" | "uploads";
+  folder: "destinations" | "fleet" | "gallery" | "blog" | "hero" | "uploads" | "brand";
   variant?: "cover" | "gallery" | "hero" | "general";
   multiple?: boolean;
   value?: string;

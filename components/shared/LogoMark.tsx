@@ -1,9 +1,12 @@
+"use client";
+
 import Image from "next/image";
 import { cn } from "@/lib/utils";
+import { usePublicSite } from "@/components/cms/PublicSiteProvider";
+import { resolveBranding } from "@/lib/cms/branding";
 
 /**
- * Compact brand mark — peacock crest on navy.
- * Designed for sticky headers and small badges (readable at 40–48px).
+ * Compact square brand mark — used at 40–48px.
  */
 type LogoMarkProps = {
   className?: string;
@@ -14,6 +17,8 @@ export function LogoMark({
   className,
   title = "Aamantran by Arohan Travels",
 }: LogoMarkProps) {
+  const branding = resolveBranding(usePublicSite());
+
   return (
     <span
       className={cn(
@@ -22,11 +27,12 @@ export function LogoMark({
       )}
     >
       <Image
-        src="/images/brand/arohan-icon.png"
+        src={branding.icon}
         alt={title}
         fill
         sizes="64px"
-        className="object-cover"
+        className="object-contain"
+        unoptimized
       />
     </span>
   );

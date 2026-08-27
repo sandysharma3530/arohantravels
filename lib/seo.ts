@@ -5,6 +5,8 @@ import type { Destination } from "@/content/destinations";
 import type { FleetVehicle } from "@/content/fleet";
 import type { BlogPost } from "@/content/blog";
 import type { FaqItem } from "@/content/faqs";
+import type { CmsSite } from "@/lib/cms/types";
+import { resolveBranding } from "@/lib/cms/branding";
 
 export const defaultTitle =
   "Arohan Travels | Luxury Urbania & Force Traveller Rental in Delhi NCR";
@@ -143,7 +145,8 @@ export function createMetadata({
   };
 }
 
-export function organizationJsonLd() {
+export function organizationJsonLd(site: CmsSite = siteConfig as unknown as CmsSite) {
+  const logo = absoluteUrl(resolveBranding(site).logo);
   return {
     "@context": "https://schema.org",
     "@type": "Organization",
@@ -153,7 +156,7 @@ export function organizationJsonLd() {
     url: siteConfig.siteUrl,
     logo: {
       "@type": "ImageObject",
-      url: absoluteUrl("/images/logo.png"),
+      url: logo,
     },
     image: absoluteUrl("/images/og-default.jpg"),
     description: siteConfig.shortDescription,
@@ -184,7 +187,7 @@ export function organizationJsonLd() {
   };
 }
 
-export function localBusinessJsonLd() {
+export function localBusinessJsonLd(site: CmsSite = siteConfig as unknown as CmsSite) {
   const rating =
     siteConfig.trustStatistics.googleRating != null &&
     siteConfig.trustStatistics.googleReviewCount != null
@@ -208,7 +211,7 @@ export function localBusinessJsonLd() {
       absoluteUrl("/images/og-default.jpg"),
       absoluteUrl("/images/fleet/traveller/cover.jpg"),
     ],
-    logo: absoluteUrl("/images/logo.png"),
+    logo: absoluteUrl(resolveBranding(site).logo),
     telephone: isConfigured(siteConfig.phoneInternational)
       ? siteConfig.phoneInternational
       : undefined,
@@ -388,7 +391,7 @@ export function articleJsonLd(post: BlogPost) {
       name: siteConfig.businessName,
       logo: {
         "@type": "ImageObject",
-        url: absoluteUrl("/images/logo.png"),
+        url: absoluteUrl(resolveBranding().logo),
       },
     },
     mainEntityOfPage: absoluteUrl(`/blog/${post.slug}`),

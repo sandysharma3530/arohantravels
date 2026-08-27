@@ -5,7 +5,7 @@ import { listEnquiries } from "@/lib/enquiries/store";
 
 const LINKS = [
   ["/sstadmin/enquiries", "Enquiries", "Incoming quotes — status, notes and follow-up"],
-  ["/sstadmin/site", "Business details", "Phone, address, social links and navigation"],
+  ["/sstadmin/site", "Business details", "Phone, address, logo, social links and navigation"],
   ["/sstadmin/home", "Home page", "Hero slides and trust bar"],
   ["/sstadmin/destinations", "Destinations", "Places you serve and home featured cards"],
   ["/sstadmin/fleet", "Fleet", "Traveller and Urbania copy and images"],

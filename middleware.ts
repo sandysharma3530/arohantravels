@@ -48,5 +48,5 @@ export async function middleware(request: NextRequest) {
 }
 
 export const config = {
-  matcher: ["/((?!_next/static|_next/image|favicon.ico|images/|icon.png|apple-icon.png).*)"],
+  matcher: ["/sstadmin/:path*", "/api/admin/:path*"],
 };

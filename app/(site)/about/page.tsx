@@ -1,9 +1,9 @@
 import Link from "next/link";
-import Image from "next/image";
 import { Check } from "lucide-react";
 import { getPublicContent } from "@/lib/cms/content";
 import { ContactCTA } from "@/components/shared/ContactCTA";
 import { JsonLd } from "@/components/shared/JsonLd";
+import { SafeCmsImage } from "@/components/shared/SafeCmsImage";
 import { SectionHeader } from "@/components/ui/SectionHeader";
 import { breadcrumbJsonLd, createMetadata } from "@/lib/seo";
 
@@ -85,7 +85,7 @@ export default async function AboutPage() {
                 className="overflow-hidden rounded-2xl border border-slate-100 bg-white shadow-soft"
               >
                 <div className="relative aspect-[16/10]">
-                  <Image
+                  <SafeCmsImage
                     src={vehicle.coverImage}
                     alt={vehicle.coverAlt}
                     fill

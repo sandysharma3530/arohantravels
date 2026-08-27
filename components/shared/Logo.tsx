@@ -1,10 +1,9 @@
-import Image from "next/image";
+"use client";
+
 import Link from "next/link";
 import { cn } from "@/lib/utils";
-import { siteConfig } from "@/content/site-config";
-
-/** Bump this whenever the logo file changes so browsers do not keep the old Smart Squad image. */
-export const LOGO_SRC = "/images/brand/arohan-logo.png";
+import { usePublicSite } from "@/components/cms/PublicSiteProvider";
+import { brandAssetUrl, resolveBranding } from "@/lib/cms/branding";
 
 type LogoProps = {
   variant?: "light" | "dark";
@@ -12,43 +11,64 @@ type LogoProps = {
   showTagline?: boolean;
   /** When true, shows HTML Aamantran / Arohan Travels text beside the mark. */
   showWordmark?: boolean;
+  priority?: boolean;
 };
+
+const HEADER_LOGO_HEIGHT_PX = 84;
+const HEADER_LOGO_MAX_WIDTH_PX = 200;
 
 /**
  * Brand lockup — Aamantran by Arohan Travels.
- * Uses an unoptimized PNG so Next.js image cache cannot serve the previous logo.
+ * Native img + explicit pixel size so the header flex bar cannot collapse it.
  */
 export function Logo({
   variant = "dark",
   className,
   showTagline = false,
   showWordmark = false,
+  priority = false,
 }: LogoProps) {
+  const site = usePublicSite();
   const isLight = variant === "light";
+  const branding = resolveBranding(site);
+  const naturalWidth = branding.width || 320;
+  const naturalHeight = branding.height || 265;
+  const displayWidth = Math.round(
+    Math.min(
+      HEADER_LOGO_MAX_WIDTH_PX,
+      HEADER_LOGO_HEIGHT_PX * (naturalWidth / naturalHeight),
+    ),
+  );
 
   return (
     <Link
       href="/"
       className={cn(
-        "group inline-flex items-center gap-2.5 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold focus-visible:ring-offset-2",
+        "group inline-flex shrink-0 items-center gap-2.5 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold focus-visible:ring-offset-2",
         isLight
           ? "focus-visible:ring-offset-navy"
           : "focus-visible:ring-offset-white",
         className,
       )}
-      aria-label={`${siteConfig.businessName} — Home`}
+      aria-label={`${site.businessName} — Home`}
     >
-      <span className="relative block h-[4.6rem] w-[5.6rem] shrink-0 overflow-hidden rounded-md transition-transform duration-300 group-hover:scale-[1.03] sm:h-[5.1rem] sm:w-[6.2rem] md:h-[5.35rem] md:w-[6.5rem]">
-        <Image
-          src={LOGO_SRC}
-          alt="Aamantran by Arohan Travels"
-          fill
-          sizes="(max-width: 640px) 90px, 104px"
-          className="object-contain object-left"
-          priority
-          unoptimized
-        />
-      </span>
+      {/* eslint-disable-next-line @next/next/no-img-element */}
+      <img
+        src={brandAssetUrl(branding.logo)}
+        alt="Aamantran by Arohan Travels"
+        width={displayWidth}
+        height={HEADER_LOGO_HEIGHT_PX}
+        decoding="async"
+        fetchPriority={priority ? "high" : "auto"}
+        style={{
+          display: "block",
+          width: displayWidth,
+          height: HEADER_LOGO_HEIGHT_PX,
+          maxWidth: HEADER_LOGO_MAX_WIDTH_PX,
+          objectFit: "contain",
+          objectPosition: "left center",
+        }}
+      />
 
       {showWordmark ? (
         <span className="flex flex-col justify-center leading-none">
@@ -74,7 +94,7 @@ export function Logo({
                 isLight ? "text-white/70" : "text-text-muted",
               )}
             >
-              {siteConfig.tagline}
+              {site.tagline}
             </span>
           ) : null}
         </span>

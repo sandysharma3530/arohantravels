@@ -14,6 +14,7 @@ import {
 import type { FleetImageCategory } from "@/content/fleet";
 import { CheckInput, TextArea, TextInput } from "@/components/admin/fields";
 import { ImageUploadField } from "@/components/admin/ImageUploadField";
+import { BrandLogoField } from "@/components/admin/BrandLogoField";
 import { buttonVariants } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 
@@ -267,6 +268,10 @@ function SiteEditor({
         </div>
         <TextArea label="Short description" value={site.shortDescription} onChange={(e) => onChange({ ...site, shortDescription: e.target.value })} />
         <TextInput label="Primary vehicle label" value={site.primaryVehicle} onChange={(e) => onChange({ ...site, primaryVehicle: e.target.value })} />
+        <BrandLogoField
+          site={site}
+          onChange={(branding) => onChange({ ...site, branding })}
+        />
       </Card>
       <Card title="Contact">
         <div className="grid gap-4 md:grid-cols-2">

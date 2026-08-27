@@ -1,6 +1,7 @@
 import { NextResponse } from "next/server";
 import { CMS_KEYS, type CmsKey } from "@/lib/cms/types";
 import { getSeedBundle } from "@/lib/cms/seed";
+import { revalidatePublicContent } from "@/lib/cms/content";
 import {
   discardDraft,
   getPreferredBackend,
@@ -46,6 +47,7 @@ export async function PUT(request: Request) {
   try {
     if (body?.reset) {
       const payload = await resetDocument(key);
+      revalidatePublicContent();
       return NextResponse.json({ ok: true, key, payload });
     }
 
@@ -55,6 +57,7 @@ export async function PUT(request: Request) {
 
     const mode: CmsWriteMode = body.mode === "published" ? "published" : "draft";
     await writeDocument(key, body.payload as never, mode);
+    if (mode === "published") revalidatePublicContent();
     return NextResponse.json({ ok: true, key, mode });
   } catch (error) {
     const message = error instanceof Error ? error.message : "Save failed.";
@@ -75,11 +78,13 @@ export async function POST(request: Request) {
   try {
     if (body?.publishKey && isCmsKey(body.publishKey)) {
       await publishDocument(body.publishKey);
+      revalidatePublicContent();
       return NextResponse.json({ ok: true, published: [body.publishKey] });
     }
 
     if (body?.publish) {
       const published = await publishAllDrafts();
+      if (published.length) revalidatePublicContent();
       return NextResponse.json({ ok: true, published });
     }
 
@@ -94,6 +99,7 @@ export async function POST(request: Request) {
         await writeDocument(key, seed[key] as never, "published");
         await discardDraft(key);
       }
+      revalidatePublicContent();
       return NextResponse.json({ ok: true });
     }
 

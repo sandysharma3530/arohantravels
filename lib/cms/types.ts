@@ -45,6 +45,18 @@ export function isNavHrefEnabled(
   return isNavItemEnabled(item);
 }
 
+export type CmsBranding = {
+  /** Full lockup for header, footer, and JSON-LD. */
+  logo: string;
+  /** Square 512px icon for the browser tab, PWA, and share cards. */
+  icon: string;
+  icon192: string;
+  appleIcon: string;
+  /** Natural pixel size of `logo`, used to size the header lockup. */
+  width?: number;
+  height?: number;
+};
+
 export type CmsSite = {
   businessName: string;
   tagline: string;
@@ -95,6 +107,7 @@ export type CmsSite = {
   primaryVehicle: string;
   siteUrl: string;
   nav: CmsNavItem[];
+  branding?: CmsBranding;
 };
 
 export type CmsHeroSlide = {

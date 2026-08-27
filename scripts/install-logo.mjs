@@ -109,15 +109,16 @@ async function main() {
     [path.join(brandDir, "logo-header-mark.png"), 512],
     [path.join(brandDir, "logo-badge.png"), 256],
     [path.join(brandDir, "logo-emblem.png"), 512],
+    [path.join(brandDir, "favicon-512.png"), 512],
+    [path.join(brandDir, "favicon-192.png"), 192],
+    [path.join(brandDir, "apple-touch.png"), 180],
     [path.join(root, "public/images/icon-512.png"), 512],
     [path.join(root, "public/images/icon-192.png"), 192],
     [path.join(root, "public/images/apple-touch-icon.png"), 180],
-    [path.join(root, "app/icon.png"), 512],
-    [path.join(root, "app/apple-icon.png"), 180],
   ];
 
   for (const [dest, size] of squareJobs) {
-    await writePng(icon, dest, size, size, "contain");
+    await writePng(full, dest, size, size, "contain");
   }
 
   console.log("Aamantran / Arohan Travels HD logo assets installed");

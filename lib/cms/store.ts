@@ -1,29 +1,17 @@
 import { promises as fs } from "fs";
 import path from "path";
-import { createClient } from "@supabase/supabase-js";
 import { CMS_KEYS, type CmsBundle, type CmsKey, type CmsStorageBackend } from "@/lib/cms/types";
 import { getSeedBundle } from "@/lib/cms/seed";
 import { isEphemeralHost, PERSISTENT_STORAGE_HELP } from "@/lib/runtime";
+import { getAdminClient, isSupabaseConfigured } from "@/lib/supabase";
 
 const DATA_DIR = path.join(process.cwd(), "data", "cms");
 const DRAFT_DIR = path.join(DATA_DIR, "drafts");
 
 export type CmsWriteMode = "published" | "draft";
 
-function supabaseAdmin() {
-  const url = process.env.NEXT_PUBLIC_SUPABASE_URL;
-  const key = process.env.SUPABASE_SERVICE_ROLE_KEY;
-  if (!url || !key) return null;
-  return createClient(url, key, {
-    auth: { persistSession: false, autoRefreshToken: false },
-  });
-}
-
 export function getPreferredBackend(): CmsStorageBackend {
-  if (process.env.NEXT_PUBLIC_SUPABASE_URL && process.env.SUPABASE_SERVICE_ROLE_KEY) {
-    return "supabase";
-  }
-  return "filesystem";
+  return isSupabaseConfigured() ? "supabase" : "filesystem";
 }
 
 function docId(key: CmsKey, mode: CmsWriteMode) {
@@ -67,7 +55,7 @@ async function deleteFileDocument(key: CmsKey, mode: CmsWriteMode) {
 }
 
 async function readSupabaseDocument(key: CmsKey, mode: CmsWriteMode = "published") {
-  const client = supabaseAdmin();
+  const client = getAdminClient();
   if (!client) return null;
   const { data, error } = await client
     .from("cms_documents")
@@ -86,7 +74,7 @@ async function writeSupabaseDocument(
   payload: unknown,
   mode: CmsWriteMode = "published",
 ) {
-  const client = supabaseAdmin();
+  const client = getAdminClient();
   if (!client) return false;
   const { error } = await client.from("cms_documents").upsert({
     id: docId(key, mode),
@@ -101,7 +89,7 @@ async function writeSupabaseDocument(
 }
 
 async function deleteSupabaseDocument(key: CmsKey, mode: CmsWriteMode) {
-  const client = supabaseAdmin();
+  const client = getAdminClient();
   if (!client) return;
   await client.from("cms_documents").delete().eq("id", docId(key, mode));
 }
@@ -184,12 +172,13 @@ export async function publishAllDrafts() {
 }
 
 export async function listDraftKeys() {
-  const keys: CmsKey[] = [];
-  for (const key of CMS_KEYS) {
-    const draft = await readDocument(key, "draft");
-    if (draft != null) keys.push(key);
-  }
-  return keys;
+  const results = await Promise.all(
+    CMS_KEYS.map(async (key) => {
+      const draft = await readDocument(key, "draft");
+      return draft != null ? key : null;
+    }),
+  );
+  return results.filter((key): key is CmsKey => key != null);
 }
 
 export async function readBundle(options?: {
@@ -200,22 +189,29 @@ export async function readBundle(options?: {
   backend: CmsStorageBackend;
 }> {
   const seed = getSeedBundle();
+  const includeDrafts = Boolean(options?.includeDrafts);
+
+  const results = await Promise.all(
+    CMS_KEYS.map(async (key) => {
+      const [published, draft] = await Promise.all([
+        readDocument(key, "published"),
+        includeDrafts ? readDocument(key, "draft") : Promise.resolve(null),
+      ]);
+      return { key, published, draft };
+    }),
+  );
+
   let usedStored = false;
   const draftKeys: CmsKey[] = [];
 
-  for (const key of CMS_KEYS) {
-    const published = await readDocument(key, "published");
+  for (const { key, published, draft } of results) {
     if (published != null) {
       usedStored = true;
       (seed as Record<string, unknown>)[key] = published;
     }
-
-    if (options?.includeDrafts) {
-      const draft = await readDocument(key, "draft");
-      if (draft != null) {
-        draftKeys.push(key);
-        (seed as Record<string, unknown>)[key] = draft;
-      }
+    if (draft != null) {
+      draftKeys.push(key);
+      (seed as Record<string, unknown>)[key] = draft;
     }
   }
 

@@ -71,7 +71,7 @@ export function Header() {
     <>
       <header className="site-header sticky top-0 z-50 border-b border-white/10 bg-navy shadow-md">
         <div className="container-site flex h-[var(--header-height)] items-center justify-between gap-3 xl:gap-4">
-          <Logo variant="light" className="shrink-0" />
+          <Logo variant="light" className="shrink-0" priority />
 
           <nav
             className="site-nav hidden min-w-0 flex-1 items-center justify-center lg:flex"
