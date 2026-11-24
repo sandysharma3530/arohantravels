@@ -37,8 +37,8 @@ export async function generateMetadata({ params }: FleetDetailPageProps) {
   }
 
   return createMetadata({
-    title: `${vehicle.name} Rental in Delhi NCR`,
-    description: `${vehicle.description} Request a customized quotation for group travel from Noida, Greater Noida and Delhi NCR.`,
+    title: `${vehicle.name} from Greater Noida`,
+    description: `${vehicle.description} Ask Arohan Travels for a written fare from Greater Noida, Ghaziabad or Delhi NCR.`,
     path: `/fleet/${vehicle.slug}`,
     image: vehicle.coverImage,
     keywords: [
@@ -124,8 +124,8 @@ export default async function FleetDetailPage({ params }: FleetDetailPageProps) 
 
           {!vehicle.owned ? (
             <p className="mt-2 max-w-2xl text-sm text-white/70">
-              Available through our travel network — customized quotes based on
-              your route and dates.
+              Arranged for your dates through our operator network. The fare
+              names the vehicle.
             </p>
           ) : null}
 
@@ -134,7 +134,7 @@ export default async function FleetDetailPage({ params }: FleetDetailPageProps) 
               href={`/contact?vehicle=${encodeURIComponent(vehicle.slug)}`}
               className={cn(buttonVariants({ variant: "teal", size: "lg" }))}
             >
-              Request Quote
+              Ask for a fare
             </Link>
             <Link
               href="/fleet"

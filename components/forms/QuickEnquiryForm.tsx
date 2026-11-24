@@ -133,9 +133,9 @@ export function QuickEnquiryForm({
     >
       <div className="mb-4 border-b border-slate-100 pb-3">
         <p className="text-xs font-semibold uppercase tracking-widest text-teal">
-          Quick Enquiry
+          Trip request
         </p>
-        <h3 className="text-lg font-bold text-navy">Get Instant Quote</h3>
+        <h3 className="text-lg font-bold text-navy">Ask Arohan for a fare</h3>
       </div>
 
       <form
@@ -332,7 +332,7 @@ export function QuickEnquiryForm({
           <Textarea
             id="message"
             className="min-h-[72px]"
-            placeholder="Share route preferences, stops or special requirements"
+            placeholder="Pickup society, office, temple stops, or anything the driver should know"
             aria-invalid={!!errors.message}
             {...register("message")}
           />
@@ -347,7 +347,7 @@ export function QuickEnquiryForm({
             {...register("consent")}
           />
           <label htmlFor="consent" className="text-xs leading-relaxed text-text-muted">
-            I agree to be contacted about this travel enquiry. *
+            Arohan Travels may phone or WhatsApp me about this trip request. *
           </label>
         </div>
         {errors.consent ? (
@@ -380,13 +380,13 @@ export function QuickEnquiryForm({
               Submitting…
             </>
           ) : (
-            "Get Instant Quote"
+            "Get a Fare"
           )}
         </Button>
 
         <p className="flex items-center justify-center gap-1.5 text-xs text-text-muted">
           <Lock className="h-3.5 w-3.5" aria-hidden="true" />
-          Your details are secure. We will contact you shortly.
+          We use these details only to price and plan this trip.
         </p>
       </form>
     </div>

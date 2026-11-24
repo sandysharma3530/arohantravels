@@ -239,7 +239,7 @@ export function HeroSlider({ children, className, slides, trustPoints }: HeroSli
                           variant: "teal",
                           size: "lg",
                         })}
-                        aria-label="Call Smart Squad Travels now"
+                        aria-label={`Call ${site.businessName}`}
                       >
                         <Phone className="h-4 w-4" aria-hidden="true" />
                         Call Now
@@ -257,7 +257,7 @@ export function HeroSlider({ children, className, slides, trustPoints }: HeroSli
                           variant: "whatsapp",
                           size: "lg",
                         })}
-                        aria-label="Contact Smart Squad Travels on WhatsApp"
+                        aria-label={`WhatsApp ${site.businessName}`}
                       >
                         <MessageCircle className="h-4 w-4" aria-hidden="true" />
                         WhatsApp Us
@@ -270,7 +270,7 @@ export function HeroSlider({ children, className, slides, trustPoints }: HeroSli
                           size: "lg",
                         })}
                       >
-                        Get a Quote
+                        Get a Fare
                       </Link>
                     )}
                   </div>

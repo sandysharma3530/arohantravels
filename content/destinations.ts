@@ -24,25 +24,25 @@ export const destinations: Destination[] = [
     name: "Tungnath & Chopta",
     region: "Uttarakhand",
     shortDescription:
-      "Scenic hill destination known for Tungnath Temple and Chopta meadows.",
+      "Meadows at Chopta and the walk toward Tungnath, with the coach starting in Greater Noida.",
     introduction:
-      "Chopta and Tungnath attract travellers seeking mountain views, temple visits and peaceful highland scenery. Smart Squad Travels provides comfortable group transportation from Delhi NCR for customized journeys to this region.",
+      "Groups that want Chopta usually leave Greater Noida before dawn, break once on the highway, and reach the meadows with enough light for a short walk. Arohan Travels prices that driving day — and the return — around your nights. The temple trail and where you sleep stay your call.",
     highlights: [
-      "Tungnath Temple trail access",
-      "Chopta meadow landscapes",
-      "Cool mountain climate",
-      "Ideal for small to mid-size groups",
+      "Road access toward the Tungnath walk",
+      "Time on the Chopta meadows",
+      "Cooler air than the plains",
+      "Works for a mid-size family or friends' group",
     ],
     recommendedMonths: "March–June and September–November (weather dependent)",
     suggestedDuration:
-      "Typically 2–4 days for a relaxed itinerary — fully customizable based on your group",
+      "Many groups keep 2–4 nights. Tell us if you want a tighter weekend.",
     roadTravelNotes:
-      "Hill roads require careful planning around weather, daylight driving and rest stops. Share your preferred pace so we can suggest a sensible travel plan.",
+      "The last stretch is a hill road, so we plan for daylight and a real rest stop. Say if elders are on board and we will not pack the driving day.",
     suitableFor: ["Family groups", "Friends", "Pilgrimage groups", "Corporate outings"],
     recommendedVehicles: ["force-traveller", "force-urbania"],
     nearbyPlaces: ["Kedarnath", "Rudraprayag", "Ukhimath"],
     coverImage: "/images/destinations/tungnath-chopta.jpg",
-    coverAlt: "Mountain meadows near Tungnath and Chopta in Uttarakhand",
+    coverAlt: "Chopta meadows on the road Arohan groups take toward Tungnath",
     gallery: [
       {
         src: "/images/destinations/tungnath-chopta.jpg",
@@ -57,19 +57,20 @@ export const destinations: Destination[] = [
     slug: "nainital",
     name: "Nainital",
     region: "Uttarakhand",
-    shortDescription: "Popular lake town and weekend getaway from Delhi NCR.",
+    shortDescription:
+      "A lake-town weekend that starts with a pickup in Greater Noida, Noida or Ghaziabad.",
     introduction:
-      "Nainital is a classic North India hill destination around Naini Lake, with viewpoints, markets and nearby lakes. Request a custom quote for comfortable Traveller transportation from Noida, Greater Noida or Delhi.",
-    highlights: ["Naini Lake", "Mall Road", "Viewpoints and nearby lakes", "Family-friendly getaway"],
+      "Nainital is the trip families book when they want Naini Lake and one or two nights in the hills. We collect the group from Greater Noida, Ghaziabad or Delhi and quote only the coach. Mall Road, viewpoints and a side trip to Bhimtal are yours to order.",
+    highlights: ["Naini Lake shoreline", "Mall Road evening", "Nearby lakes if you add a day", "Room for a family with elders"],
     recommendedMonths: "March–June and September–November",
-    suggestedDuration: "Typically 2–3 days — customizable for your group",
+    suggestedDuration: "A Friday departure and a Sunday return is the usual ask.",
     roadTravelNotes:
-      "Expect winding hill roads. Early morning departures from Delhi NCR often work well for day-one comfort.",
+      "The climb after Kathgodam is winding. A Greater Noida start around dawn keeps the first day comfortable.",
     suitableFor: ["Families", "Couples traveling in groups", "School trips", "Corporate teams"],
     recommendedVehicles: ["force-traveller", "force-urbania"],
     nearbyPlaces: ["Bhimtal", "Sattal", "Mukteshwar"],
     coverImage: "/images/destinations/nainital.jpg",
-    coverAlt: "Nainital lake surrounded by hills",
+    coverAlt: "Naini Lake, a frequent weekend run from Arohan's Greater Noida desk",
     gallery: [
       {
         src: "/images/destinations/nainital.jpg",
@@ -84,19 +85,20 @@ export const destinations: Destination[] = [
     slug: "mussoorie",
     name: "Mussoorie",
     region: "Uttarakhand",
-    shortDescription: "Queen of the Hills — viewpoints, walks and cool weather.",
+    shortDescription:
+      "A short hill run to Mussoorie, with Mall Road and viewpoints on your list.",
     introduction:
-      "Mussoorie offers hill-station charm close to Dehradun, with promenades, viewpoints and nearby waterfalls. We arrange group vehicle travel tailored to your dates and passenger count.",
-    highlights: ["Mall Road", "Gun Hill / viewpoints", "Kempty Falls area", "Pleasant hill climate"],
+      "Mussoorie is close enough for a long weekend from our side of NCR. Tell us whether Dehradun is a stop on the way, and Arohan will price a Force Urbania or the larger Traveller from Greater Noida.",
+    highlights: ["Mall Road walk", "Ridge viewpoints", "Kempty side if you want it", "Cooler weather than Delhi"],
     recommendedMonths: "March–June and September–November",
-    suggestedDuration: "Typically 2–3 days — adjust to your schedule",
+    suggestedDuration: "Two nights cover Mall Road without a rushed return.",
     roadTravelNotes:
-      "Traffic near popular spots can increase on weekends and holidays. Flexible pickup timing helps.",
+      "Weekend traffic stacks up near the popular stops. A slightly earlier Greater Noida departure avoids the worst of it.",
     suitableFor: ["Families", "Friends", "Corporate getaways"],
     recommendedVehicles: ["force-traveller", "force-urbania"],
     nearbyPlaces: ["Dehradun", "Dhanaulti", "Haridwar"],
     coverImage: "/images/destinations/mussoorie.jpg",
-    coverAlt: "Mussoorie hill station panoramic view",
+    coverAlt: "Mussoorie ridge, within a long weekend of Greater Noida",
     gallery: [
       {
         src: "/images/destinations/mussoorie.jpg",
@@ -111,19 +113,20 @@ export const destinations: Destination[] = [
     slug: "kedarnath",
     name: "Kedarnath",
     region: "Uttarakhand",
-    shortDescription: "Sacred Himalayan pilgrimage destination.",
+    shortDescription:
+      "Coach support up to the open roadhead for a Kedarnath yatra group.",
     introduction:
-      "Kedarnath is an important pilgrimage destination in Uttarakhand. Smart Squad Travels supports group road travel planning up to feasible roadheads based on season, regulations and passenger needs.",
-    highlights: ["Pilgrimage journey planning", "Group coordination", "Seasonal route awareness", "Comfortable road travel"],
+      "Arohan does not trek the final stretch to Kedarnath. We arrange the coach from Greater Noida or Delhi NCR to the practical roadhead for that season, and we say so if weather or local rules shorten the drive.",
+    highlights: ["Yatra groups travelling together", "Roadhead drop, not the trek", "Season checked before we quote", "Pace set for elders if you tell us"],
     recommendedMonths: "Typically May–October (official yatra season varies yearly)",
-    suggestedDuration: "Often 3–5 days depending on route and rest needs — fully customizable",
+    suggestedDuration: "Most parties keep 3–5 days once rest stops are included.",
     roadTravelNotes:
-      "Access depends on open routes, weather and local guidelines. Share travel dates early so we can advise practical pickup and drop options.",
+      "Open roads change with the season. Send dates early so the fare matches a route that is actually driveable.",
     suitableFor: ["Pilgrimage groups", "Families", "Senior-friendly groups with planning"],
     recommendedVehicles: ["force-traveller"],
     nearbyPlaces: ["Gaurikund", "Sonprayag", "Rudraprayag"],
     coverImage: "/images/destinations/kedarnath.jpg",
-    coverAlt: "Kedarnath temple area in the Himalayas",
+    coverAlt: "Kedarnath region, reached by road as far as the season allows",
     gallery: [
       {
         src: "/images/destinations/kedarnath.jpg",
@@ -138,19 +141,20 @@ export const destinations: Destination[] = [
     slug: "haridwar-rishikesh",
     name: "Haridwar & Rishikesh",
     region: "Uttarakhand",
-    shortDescription: "Spiritual ghats, Ganga aarti and riverside experiences.",
+    shortDescription:
+      "Ghats and aarti timing, as a day run or an overnight from Greater Noida.",
     introduction:
-      "Haridwar and Rishikesh are among the most requested destinations from Delhi NCR for spiritual visits, family trips and weekend getaways. Ask for a custom Traveller quote based on your group size.",
-    highlights: ["Har Ki Pauri", "Ganga Aarti", "Rishikesh riverside areas", "Easy weekend destination"],
+      "Haridwar and Rishikesh are the trips people book when they want the Ganga without a long mountain day. Share the aarti you care about and the headcount, and we will quote a door pickup from Ghaziabad, Noida or Delhi.",
+    highlights: ["Har Ki Pauri timing", "Evening Ganga aarti", "Rishikesh if you add it", "Possible as a same-day return"],
     recommendedMonths: "October–March for cooler weather; year-round for pilgrimages",
-    suggestedDuration: "Typically 1–3 days — customizable",
+    suggestedDuration: "One long day, or two if you want both towns without hurry.",
     roadTravelNotes:
-      "Well-connected from Delhi NCR. Festival days may mean heavier traffic near ghats.",
+      "The highway from Greater Noida is straightforward. Festival evenings need extra time near the ghats, so we build that into the plan.",
     suitableFor: ["Families", "Pilgrimage groups", "Corporate teams", "School groups"],
     recommendedVehicles: ["force-traveller", "force-urbania"],
     nearbyPlaces: ["Dehradun", "Mussoorie", "Neelkanth"],
     coverImage: "/images/destinations/haridwar-rishikesh.jpg",
-    coverAlt: "Ganga riverfront at Haridwar and Rishikesh",
+    coverAlt: "Ganga riverfront on the Haridwar and Rishikesh run",
     gallery: [
       {
         src: "/images/destinations/haridwar-rishikesh.jpg",
@@ -165,19 +169,19 @@ export const destinations: Destination[] = [
     slug: "manali",
     name: "Manali",
     region: "Himachal Pradesh",
-    shortDescription: "Popular Himalayan destination for group holidays.",
+    shortDescription: "A multi-day Himachal run with one coach for the whole valley.",
     introduction:
-      "Manali is a favourite for longer group holidays from Delhi NCR. We help plan comfortable Force Traveller or Urbania travel around your preferred dates and passenger count — without fixed package pricing.",
-    highlights: ["Mountain scenery", "Solang / nearby valleys", "Mall Road area", "Group holiday favourite"],
+      "Manali needs honest driving days, not a packed brochure. Arohan quotes Force Urbania or Traveller travel from Greater Noida around your dates and luggage, and leaves hotels off the bill.",
+    highlights: ["Valley time, not just the drive", "Solang if the group wants it", "Mall Road without a fixed tour", "One vehicle for the whole party"],
     recommendedMonths: "March–June and October–February (season preferences vary)",
-    suggestedDuration: "Typically 4–6 days for a relaxed trip — customizable",
+    suggestedDuration: "Four to six days is realistic once the highway is counted.",
     roadTravelNotes:
-      "Longer highway and hill stretches. Overnight or early starts are common for comfort.",
+      "This is a long highway plus a hill finish. Overnight or pre-dawn starts from Greater Noida are the comfortable options.",
     suitableFor: ["Friends", "Families", "Corporate outings"],
     recommendedVehicles: ["force-traveller", "force-urbania"],
     nearbyPlaces: ["Kullu", "Solang Valley", "Kasol"],
     coverImage: "/images/destinations/manali.jpg",
-    coverAlt: "Manali mountain valley landscape",
+    coverAlt: "Manali valley on a multi-day coach run from Greater Noida",
     gallery: [
       {
         src: "/images/destinations/manali.jpg",
@@ -192,19 +196,19 @@ export const destinations: Destination[] = [
     slug: "shimla",
     name: "Shimla",
     region: "Himachal Pradesh",
-    shortDescription: "Colonial hill capital with malls, viewpoints and cool air.",
+    shortDescription: "The Ridge and Mall Road, with the coach arranged from Greater Noida.",
     introduction:
-      "Shimla remains a classic Himachal destination for families and groups. Request a tailored quotation for pickup from Noida, Greater Noida or Delhi.",
-    highlights: ["The Ridge & Mall Road", "Viewpoints", "Family-friendly hills", "Weekend or extended stays"],
+      "Shimla weekends fill quickly. Arohan prices the vehicle from Greater Noida or Noida, and you tell us if Kufri or Chail should sit on the same loop.",
+    highlights: ["The Ridge and Mall Road", "A viewpoint stop you choose", "Family or school groups", "Weekend or a longer stay"],
     recommendedMonths: "March–June and September–November",
-    suggestedDuration: "Typically 3–5 days — adjust as needed",
+    suggestedDuration: "Three to five days if you want the town without a same-day turnaround.",
     roadTravelNotes:
-      "Popular weekends can be busy. Sharing flexible timings helps with smoother travel.",
+      "Holiday weekends crawl near Shimla. Share a flexible arrival window and the Greater Noida departure is easier to hold.",
     suitableFor: ["Families", "School trips", "Corporate groups"],
     recommendedVehicles: ["force-traveller", "force-urbania"],
     nearbyPlaces: ["Kufri", "Chail", "Kasauli"],
     coverImage: "/images/destinations/shimla.jpg",
-    coverAlt: "Shimla town in the hills",
+    coverAlt: "Shimla town, a Himachal run quoted from Greater Noida",
     gallery: [
       {
         src: "/images/destinations/shimla.jpg",
@@ -219,19 +223,19 @@ export const destinations: Destination[] = [
     slug: "jaipur",
     name: "Jaipur",
     region: "Rajasthan",
-    shortDescription: "Pink City forts, bazaars and heritage sightseeing.",
+    shortDescription: "Forts and bazaars on a highway day or a two-night Pink City halt.",
     introduction:
-      "Jaipur is ideal for heritage-focused group travel from Delhi NCR. We provide Traveller transportation so your group can explore at a comfortable pace with a custom travel plan.",
-    highlights: ["Amer Fort area", "City Palace vicinity", "Bazaars and heritage sites", "Day or multi-day options"],
+      "Jaipur is mostly open highway from our side of NCR. We time a Greater Noida departure so the group reaches the forts with daylight left, and we quote the coach separately from monument tickets.",
+    highlights: ["Amer and the city forts", "Bazaar time you set", "Day trip or two nights", "Works for wedding guests too"],
     recommendedMonths: "October–March for pleasant weather",
-    suggestedDuration: "Typically 1–3 days — fully customizable",
+    suggestedDuration: "One long day, or up to three if the group wants the city slowly.",
     roadTravelNotes:
-      "Mostly highway travel from Delhi NCR. Early starts help maximize sightseeing time.",
+      "The drive from Greater Noida is mostly highway. An early start is what leaves time for Amer the same day.",
     suitableFor: ["Families", "Corporate teams", "Wedding guest transfers", "School groups"],
     recommendedVehicles: ["force-traveller", "force-urbania"],
     nearbyPlaces: ["Pushkar", "Ajmer", "Agra"],
     coverImage: "/images/destinations/jaipur.jpg",
-    coverAlt: "Jaipur fort and pink city architecture",
+    coverAlt: "Jaipur forts, a highway day from Greater Noida",
     gallery: [
       {
         src: "/images/destinations/jaipur.jpg",
@@ -246,19 +250,19 @@ export const destinations: Destination[] = [
     slug: "jammu-kashmir",
     name: "Jammu & Kashmir",
     region: "Jammu & Kashmir",
-    shortDescription: "Scenic valleys and memorable group journeys.",
+    shortDescription: "Staged valley travel once you name the cities and the season.",
     introduction:
-      "Jammu & Kashmir offers dramatic landscapes for carefully planned group travel. Share your preferred cities, dates and passenger count for a customized transportation quotation.",
-    highlights: ["Scenic valleys", "Custom multi-city planning", "Group travel coordination", "Seasonal route guidance"],
+      "Jammu & Kashmir only works as a coach plan when the city list is clear. Send Srinagar, Gulmarg, Pahalgam, Jammu — or the mix you want — and Arohan will quote the driving days from Greater Noida.",
+    highlights: ["You name the cities", "Driving days kept realistic", "Season checked before the fare", "One coach for the group"],
     recommendedMonths: "April–October for many valley routes (confirm seasonally)",
-    suggestedDuration: "Often 5–8 days depending on cities covered — customizable",
+    suggestedDuration: "Often five to eight days, depending on how many valleys you add.",
     roadTravelNotes:
-      "Longer journeys may need staged travel and weather awareness. We plan around practical driving days.",
+      "These are long stages. We split them so the group is not asked to sit through an unsafe day, and we revisit the plan if the weather turns.",
     suitableFor: ["Families", "Friends", "Corporate incentive groups"],
     recommendedVehicles: ["force-traveller", "force-urbania"],
     nearbyPlaces: ["Srinagar", "Gulmarg", "Pahalgam", "Jammu"],
     coverImage: "/images/destinations/jammu-kashmir.jpg",
-    coverAlt: "Scenic valley landscape in Jammu and Kashmir",
+    coverAlt: "A Kashmir valley stage on a longer Arohan coach plan",
     gallery: [
       {
         src: "/images/destinations/jammu-kashmir.jpg",
@@ -273,19 +277,19 @@ export const destinations: Destination[] = [
     slug: "ayodhya",
     name: "Ayodhya",
     region: "Uttar Pradesh",
-    shortDescription: "Important spiritual destination for group pilgrimages.",
+    shortDescription: "A pilgrimage run into Uttar Pradesh, timed around your darshan window.",
     introduction:
-      "Ayodhya is a key spiritual destination in Uttar Pradesh. Smart Squad Travels arranges comfortable group transportation from Delhi NCR based on your travel date and group size.",
-    highlights: ["Pilgrimage travel", "Group-friendly planning", "Door-to-door options", "Flexible timing"],
+      "Ayodhya groups usually want a clear departure from Greater Noida and extra time if a festival is on. Arohan arranges the vehicle and the driving plan. Darshan arrangements stay with you.",
+    highlights: ["Darshan-day timing", "Door pickup in NCR", "Festival crowds planned for", "Suitable for a family yatra"],
     recommendedMonths: "October–March preferred; year-round for pilgrimages",
-    suggestedDuration: "Typically 1–3 days — customizable",
+    suggestedDuration: "One to three days, longer if Lucknow is on the same loop.",
     roadTravelNotes:
-      "Festival periods can be crowded. Booking travel windows early is recommended.",
+      "Festival dates crowd the approach roads. Book the travel window early and we will pad the arrival.",
     suitableFor: ["Pilgrimage groups", "Families", "Senior groups with planning"],
     recommendedVehicles: ["force-traveller"],
     nearbyPlaces: ["Lucknow", "Prayagraj", "Varanasi"],
     coverImage: "/images/destinations/ayodhya.jpg",
-    coverAlt: "Ayodhya temple and city skyline",
+    coverAlt: "Ayodhya, a pilgrimage drive from Greater Noida",
     gallery: [
       {
         src: "/images/destinations/ayodhya.jpg",
@@ -300,19 +304,19 @@ export const destinations: Destination[] = [
     slug: "mathura-vrindavan",
     name: "Mathura & Vrindavan",
     region: "Uttar Pradesh",
-    shortDescription: "Krishna bhakti destinations close to Delhi NCR.",
+    shortDescription: "Temple circuits in Mathura and Vrindavan, often finished the same day.",
     introduction:
-      "Mathura and Vrindavan are popular for day trips and short pilgrimages from Delhi NCR. Request a quote for Force Traveller group travel tailored to your schedule.",
-    highlights: ["Temple visits", "Day-trip friendly distance", "Family pilgrimage option", "Flexible same-day or overnight plans"],
+      "Mathura and Vrindavan sit close enough for a dawn start from Greater Noida and an evening return. Tell us which temples matter and whether elders are travelling, and we will match a Traveller or an Urbania.",
+    highlights: ["Temple order you choose", "Same-day return is realistic", "Overnight if the list is long", "Easier boarding if you ask for it"],
     recommendedMonths: "October–March; festivals have special crowds",
-    suggestedDuration: "Often 1–2 days — customizable",
+    suggestedDuration: "Most groups finish in one or two days.",
     roadTravelNotes:
-      "Relatively accessible from Delhi NCR. Festival days may need extra buffer time.",
+      "The run from Greater Noida is short by our standards. Festival days still need a buffer near the temples.",
     suitableFor: ["Families", "Pilgrimage groups", "School groups"],
     recommendedVehicles: ["force-traveller", "force-urbania"],
     nearbyPlaces: ["Agra", "Govardhan", "Barsana"],
     coverImage: "/images/destinations/mathura-vrindavan.jpg",
-    coverAlt: "Temples in Mathura and Vrindavan",
+    coverAlt: "Temples in Mathura and Vrindavan, a short run from NCR",
     gallery: [
       {
         src: "/images/destinations/mathura-vrindavan.jpg",
@@ -327,19 +331,19 @@ export const destinations: Destination[] = [
     slug: "jim-corbett",
     name: "Jim Corbett",
     region: "Uttarakhand",
-    shortDescription: "Wildlife reserve getaways for nature-focused groups.",
+    shortDescription: "A nature weekend, with the coach dropped at your Corbett gate or lodge.",
     introduction:
-      "Jim Corbett is popular for nature escapes and weekend group travel from Delhi NCR. We provide Traveller transportation to your preferred gate or stay area based on availability and plans.",
-    highlights: ["Nature getaway", "Weekend-friendly distance", "Group coordination", "Custom pickup points"],
+      "Jim Corbett trips go wrong when the lodge and the gate are vague. Share the stay area and Arohan will quote a Greater Noida pickup timed for daylight at the forest edge.",
+    highlights: ["Drop at your gate or lodge", "Weekend distance from NCR", "Nature trip, not a safari package", "Early start if you want arrival light"],
     recommendedMonths: "November–June (park zones and activities vary by season)",
-    suggestedDuration: "Typically 2–3 days — customizable",
+    suggestedDuration: "Two or three days is the request we hear most.",
     roadTravelNotes:
-      "Confirm stay location and gate access. Early departures help maximize daylight on arrival day.",
+      "Tell us the gate and the lodge before we quote. A pre-dawn leave from Greater Noida is what protects the first afternoon.",
     suitableFor: ["Families", "Friends", "Corporate offsites"],
     recommendedVehicles: ["force-traveller", "force-urbania"],
     nearbyPlaces: ["Ramnagar", "Nainital", "Ranikhet"],
     coverImage: "/images/destinations/jim-corbett.jpg",
-    coverAlt: "Forest landscape near Jim Corbett National Park",
+    coverAlt: "Forest near Jim Corbett, a weekend coach run from Greater Noida",
     gallery: [
       {
         src: "/images/destinations/jim-corbett.jpg",

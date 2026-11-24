@@ -1,8 +1,8 @@
 /**
- * Central site configuration for Smart Squad Travels.
- * Replace all REPLACE_* placeholders with your real business details
- * before going live. Prefer environment variables for phone/WhatsApp
- * when you want different values per environment.
+ * Fallback site configuration for Arohan Travels.
+ * Published copy in data/cms (or Supabase) overrides these values.
+ * Prefer environment variables for phone/WhatsApp when you want
+ * different values per environment.
  */
 
 export const siteConfig = {
@@ -10,7 +10,7 @@ export const siteConfig = {
   tagline: "Where Every Journey Feels Invited.",
   legalName: "Arohan Travels",
   shortDescription:
-    "Comfortable group transportation and Traveller rental services for family trips, corporate travel, weddings, pilgrimages, airport transfers and customized outstation journeys across Delhi NCR and North India.",
+    "Greater Noida desk for Force Urbania and Force Traveller group travel — families, weddings, offices, airport batches and temple runs across North India, with a written fare for the coach.",
 
   // REPLACE these placeholders with your real contact details
   phoneDisplay:
@@ -89,8 +89,8 @@ export const siteConfig = {
     tripsCompleted: null as number | null,
   },
 
-  primaryVehicle: "21-Seater Force Traveller",
-  siteUrl: process.env.NEXT_PUBLIC_SITE_URL || "https://www.smartsquadtravels.com",
+  primaryVehicle: "Force Urbania",
+  siteUrl: process.env.NEXT_PUBLIC_SITE_URL || "https://www.arohantravels.com",
 
   nav: [
     { label: "Home", href: "/", enabled: true },

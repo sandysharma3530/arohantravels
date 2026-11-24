@@ -13,8 +13,8 @@ type ContactCTAProps = {
 };
 
 export async function ContactCTA({
-  heading = "Ready to plan your journey?",
-  text = "Share your travel dates, group size and destination — we will help you with a customized quote for comfortable group transportation.",
+  heading = "Tell us where the group is headed",
+  text = "Send the date, the pickup and the headcount. The Greater Noida desk will reply with a fare for the coach.",
   className,
 }: ContactCTAProps) {
   const site = await getCmsSite();
@@ -54,7 +54,7 @@ export async function ContactCTA({
               href="/contact"
               className={cn(buttonVariants({ variant: "teal", size: "lg" }))}
             >
-              Get a Quote
+              Get a Fare
             </Link>
             {whatsappConfigured ? (
               <a

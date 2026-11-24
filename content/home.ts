@@ -1,61 +1,60 @@
 export const heroSlides = [
   {
     id: 1,
-    eyebrow: "COMFORTABLE JOURNEYS.",
+    eyebrow: "FROM GREATER NOIDA.",
     headingLines: [
-      { text: "MEMORABLE", accent: false },
-      { text: "EXPERIENCES.", accent: true },
+      { text: "THE GROUP", accent: false },
+      { text: "IS INVITED.", accent: true },
     ],
     description:
-      "21-Seater Force Traveller rental for family trips, corporate travel, weddings, airport transfers, pilgrimages and customized outstation journeys.",
+      "Arohan Travels arranges Force Urbania and 21-seat Force Traveller coaches for families, weddings, offices and temple trips leaving Greater Noida, Ghaziabad and Delhi NCR.",
     image: "/images/hero/slide-1.jpg",
-    imageAlt:
-      "Force Traveller van ready for a scenic North India group journey",
+    imageAlt: "Force Traveller parked before a group departure from Greater Noida",
     showTrustPoints: true,
     showCtas: true,
     enabled: true,
   },
   {
     id: 2,
-    eyebrow: "TRAVEL SMART.",
+    eyebrow: "ONE COACH. YOUR STOPS.",
     headingLines: [
-      { text: "TRAVEL TOGETHER.", accent: false },
-      { text: "TRAVEL COMFORTABLY.", accent: true },
+      { text: "HILL DAYS", accent: false },
+      { text: "WITHOUT A PACKAGE.", accent: true },
     ],
     description:
-      "Reliable group transportation for family vacations, corporate outings, religious journeys and special occasions.",
+      "Name the date, the headcount and the places you actually want to see. We price the driving plan for Uttarakhand, Himachal, Rajasthan or a same-day NCR run.",
     image: "/images/hero/slide-2.jpg",
-    imageAlt: "Comfortable group travel vehicle for family and corporate trips",
+    imageAlt: "Group coach prepared for a family or office outing",
     showTrustPoints: false,
     showCtas: true,
     enabled: true,
   },
   {
     id: 3,
-    eyebrow: "CUSTOM QUOTES.",
+    eyebrow: "URBANIA WHEN THE DAY IS LONG.",
     headingLines: [
-      { text: "EXPLORE NORTH INDIA", accent: false },
-      { text: "YOUR WAY.", accent: true },
+      { text: "RECLINER SEATS", accent: false },
+      { text: "FOR THE HIGHWAY.", accent: true },
     ],
     description:
-      "Request a customized quote for destinations across Uttarakhand, Himachal Pradesh, Rajasthan, Uttar Pradesh and Jammu & Kashmir.",
+      "For longer outstation days we usually suggest a Force Urbania. Larger parties move to the Traveller once seats and luggage are clear.",
     image: "/images/hero/slide-3.jpg",
-    imageAlt: "North India mountain landscape for customized outstation travel",
+    imageAlt: "Hill road of the kind Arohan groups take from Delhi NCR",
     showTrustPoints: false,
     showCtas: true,
     enabled: true,
   },
   {
     id: 4,
-    eyebrow: "PREMIUM RIDES.",
+    eyebrow: "WEDDINGS, OFFICES, AIRPORTS.",
     headingLines: [
-      { text: "FORCE URBANIA", accent: false },
-      { text: "FOR SPECIAL JOURNEYS.", accent: true },
+      { text: "GUESTS MOVE", accent: false },
+      { text: "AS ONE GROUP.", accent: true },
     ],
     description:
-      "Hire a Force Urbania for weddings, corporate travel and comfortable outstation trips from Delhi NCR.",
+      "Guest shuttles, terminal pickups and office outings are coordinated from our Greater Noida desk, with the fare written down before you confirm.",
     image: "/images/fleet/urbania/cover.jpg",
-    imageAlt: "Force Urbania luxury van for premium group travel",
+    imageAlt: "Force Urbania used for guest and office group travel",
     showTrustPoints: false,
     showCtas: true,
     enabled: true,
@@ -63,33 +62,33 @@ export const heroSlides = [
 ] as const;
 
 export const heroTrustPoints = [
-  { id: "gps", label: "GPS Tracking", icon: "satellite" as const },
-  { id: "cctv", label: "CCTV Enabled", icon: "cctv" as const },
-  { id: "drivers", label: "Experienced Drivers", icon: "user" as const },
+  { id: "gps", label: "GPS on equipped coaches", icon: "satellite" as const },
+  { id: "cctv", label: "Cabin camera where fitted", icon: "cctv" as const },
+  { id: "drivers", label: "Drivers briefed on the route", icon: "user" as const },
   {
     id: "vehicles",
-    label: "Well-Maintained Vehicles",
+    label: "Checked before departure",
     icon: "shield" as const,
   },
 ];
 
 export const trustBarItems = [
-  { id: "support", label: "24x7 Customer Support", icon: "headset" as const },
+  { id: "support", label: "Phone support around the clock", icon: "headset" as const },
   {
     id: "door",
-    label: "Door-to-Door Pickup & Drop",
+    label: "Pickup at home or office",
     icon: "mapPin" as const,
   },
-  { id: "pricing", label: "Transparent Pricing", icon: "receipt" as const },
-  { id: "ontime", label: "On-Time Service", icon: "clock" as const },
+  { id: "pricing", label: "Fare shared in writing", icon: "receipt" as const },
+  { id: "ontime", label: "Departure time we agree", icon: "clock" as const },
   {
     id: "clean",
-    label: "Clean & Sanitized Vehicles",
+    label: "Cabin cleaned before boarding",
     icon: "sparkles" as const,
   },
   {
     id: "safe",
-    label: "Safe, Comfortable & Reliable",
+    label: "Steady pace for mixed-age groups",
     icon: "shieldCheck" as const,
   },
 ] as const;

@@ -11,39 +11,39 @@ export type FaqItem = {
 export const faqs: FaqItem[] = [
   {
     id: "what-vehicles",
-    question: "Which vehicles does Smart Squad Travels offer?",
+    question: "Which coach should I ask Arohan Travels for?",
     answer:
-      "We arrange comfortable group transportation with Force Traveller (21-seater) and Force Urbania options, based on availability and your passenger count. Request a custom quote for your preferred vehicle.",
+      "Most longer trips start with a Force Urbania, because the recliner cabin suits a full day on the highway. When the guest list is larger, we move to a 21-seat Force Traveller. Tell us the headcount and luggage and we will recommend one with the fare.",
   },
   {
     id: "fixed-packages",
-    question: "Do you sell fixed tour packages with set prices?",
+    question: "Do you sell hotel packages or fixed sightseeing tours?",
     answer:
-      "No. We do not sell fixed tour packages with package prices, hotel inclusions or set durations. Destinations are locations we serve — every trip is planned around your dates, route and group size with a customized quotation.",
+      "No. Arohan quotes the coach and the driving plan only. The places on this website are routes we cover, not packages with hotels, meals or a set number of nights.",
   },
   {
     id: "service-areas",
-    question: "Which areas do you serve?",
+    question: "Where can you pick the group up?",
     answer:
-      "Primary pickup areas include Noida, Greater Noida and Delhi NCR, with outstation journeys across North India including Uttarakhand, Himachal Pradesh, Rajasthan, Uttar Pradesh and Jammu & Kashmir.",
+      "The desk is in Greater Noida. We regularly collect groups from Greater Noida, Ghaziabad, Noida and the rest of Delhi NCR, then drive outstation across Uttarakhand, Himachal Pradesh, Rajasthan, Uttar Pradesh and Jammu & Kashmir.",
   },
   {
     id: "how-to-book",
-    question: "How do I request a quotation?",
+    question: "What should I send to get a fare?",
     answer:
-      "Use the Quick Enquiry form on the website, or contact us by phone or WhatsApp with your travel date, pickup location, destination, passenger count and preferred vehicle. We will review your request and get back to you shortly.",
+      "WhatsApp or use the trip form with your travel date, pickup address, destination, return date if you have one, passenger count and whether you prefer the Urbania or the Traveller. We reply with a fare. A message is not a confirmed booking until both sides agree.",
   },
   {
     id: "trip-types",
-    question: "What types of trips can you support?",
+    question: "What kinds of trips do you take?",
     answer:
-      "We support family and group trips, corporate travel, wedding transportation, airport transfers, religious journeys, school and college trips, and customized outstation travel.",
+      "Family and friends outings, office offsites, wedding-day guest movement, airport batches, temple and yatra travel, school and college groups, and other outstation routes you describe.",
   },
   {
     id: "safety-features",
-    question: "What comfort and safety features are available?",
+    question: "What is actually on the vehicle?",
     answer:
-      "Depending on the assigned vehicle, features typically include air conditioning, pushback or recliner seating, GPS tracking, CCTV on equipped vehicles, luggage space and charging points where available. Confirm preferred features when you request a quote.",
+      "Expect air conditioning and luggage space. The Urbania adds recliner seating and seat-level vents. GPS and a cabin camera are on coaches fitted with them — ask us to confirm those for the vehicle assigned to your date.",
   },
 ];
 

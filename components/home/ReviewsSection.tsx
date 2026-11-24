@@ -24,7 +24,7 @@ export async function ReviewsSection({ className, limit = 3 }: ReviewsSectionPro
       <div className="container-site">
         <SectionHeader
           title="What Our Customers Say"
-          subtitle="Feedback from groups who travelled with Smart Squad Travels."
+          subtitle="Notes from groups who travelled with Arohan Travels."
         />
 
         {hasDemoReviews ? (

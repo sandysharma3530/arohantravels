@@ -6,15 +6,15 @@ import { SectionHeader } from "@/components/ui/SectionHeader";
 import { createMetadata } from "@/lib/seo";
 
 export const metadata = createMetadata({
-  title: "Force Traveller & Urbania Fleet",
+  title: "Urbania and Traveller options",
   description:
-    "Explore Force Traveller (21-seater) and Force Urbania options for family trips, corporate travel, weddings, pilgrimages and customized outstation journeys from Delhi NCR.",
+    "Compare the Force Urbania and the 21-seat Force Traveller that Arohan Travels arranges from Greater Noida. Fares are written for your route — nothing is sold as a package.",
   path: "/fleet",
   keywords: [
-    "21 seater Force Traveller",
-    "Force Urbania rental",
-    "group van hire Delhi NCR",
-    "Traveller fleet Noida",
+    "Force Urbania Greater Noida",
+    "21 seater Traveller Ghaziabad",
+    "group coach hire Delhi NCR",
+    "Arohan Travels fleet",
   ],
 });
 
@@ -36,11 +36,12 @@ export default async function FleetPage() {
             </ol>
           </nav>
           <h1 className="text-3xl font-bold text-white md:text-4xl">
-            Our Fleet
+            Coaches we arrange
           </h1>
           <p className="mt-3 max-w-2xl text-base text-white/80 md:text-lg">
-            Comfortable, spacious and well-maintained vehicles for every group
-            journey — request a customized quote based on your route and dates.
+            The Urbania is our usual suggestion for a long day. The 21-seat
+            Traveller is for the bigger guest list. Ask for a fare and we will
+            name the vehicle.
           </p>
         </div>
       </section>
@@ -49,8 +50,8 @@ export default async function FleetPage() {
         <div className="container-site">
           <SectionHeader
             as="h2"
-            title="Choose Your Vehicle"
-            subtitle="Compare seating, features and gallery photos. Pricing is shared as a custom quotation — no fixed packages listed online."
+            title="Which coach fits the group"
+            subtitle="Photos and seat notes are here. The price is not — it depends on the route and the dates."
           />
 
           <div className="grid gap-8 lg:grid-cols-2">

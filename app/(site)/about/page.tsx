@@ -8,14 +8,14 @@ import { SectionHeader } from "@/components/ui/SectionHeader";
 import { breadcrumbJsonLd, createMetadata } from "@/lib/seo";
 
 export const metadata = createMetadata({
-  title: "About Smart Squad Travels",
+  title: "About Arohan Travels",
   description:
-    "Smart Squad Travels provides comfortable group transportation from Noida, Greater Noida and Delhi NCR — Force Traveller and Urbania for families, corporates, weddings and customized outstation journeys.",
+    "Arohan Travels arranges Force Urbania and Force Traveller coaches from Greater Noida for families, weddings, offices and yatra groups across North India.",
   path: "/about",
   keywords: [
-    "Smart Squad Travels",
-    "Traveller rental company Delhi NCR",
-    "group transport Noida",
+    "Arohan Travels Greater Noida",
+    "group coach hire Ghaziabad",
+    "Urbania rental Greater Noida",
   ],
 });
 
@@ -47,8 +47,8 @@ export default async function AboutPage() {
             About {siteConfig.businessName}
           </h1>
           <p className="mt-3 max-w-2xl text-base text-white/80 md:text-lg">
-            {siteConfig.tagline} — reliable group travel support from Noida,
-            Greater Noida and Delhi NCR across North India.
+            {siteConfig.tagline}. Group coaches leave from our Greater Noida
+            desk for hills, cities and temple runs across North India.
           </p>
         </div>
       </section>
@@ -74,8 +74,8 @@ export default async function AboutPage() {
       <section className="section-pad bg-bg-light">
         <div className="container-site">
           <SectionHeader
-            title="Our Fleet Overview"
-            subtitle="Spacious, well-maintained vehicles for group travel — availability confirmed when you request a quote."
+            title="The two coaches"
+            subtitle="Seat count is confirmed with the fare. We do not claim a vehicle until it is assigned to your dates."
           />
 
           <div className="grid gap-8 lg:grid-cols-2">
@@ -100,8 +100,8 @@ export default async function AboutPage() {
                   </p>
                   {!vehicle.owned ? (
                     <p className="mt-2 text-xs text-text-muted">
-                      Available through our travel network — customized quotes
-                      based on your route and dates.
+                      Arranged for your dates through our operator network. The
+                      fare names the vehicle.
                     </p>
                   ) : null}
                   <ul className="mt-4 grid gap-2 sm:grid-cols-2">
@@ -141,8 +141,8 @@ export default async function AboutPage() {
       </section>
 
       <ContactCTA
-        heading="Plan your next group journey with us"
-        text="Share your travel dates, pickup location and destination. We will respond with a customized quotation for comfortable group transportation."
+        heading="Send the Greater Noida desk your dates"
+        text="Share the pickup, the destination and how many people are travelling. We reply with a fare for the coach."
       />
     </>
   );

@@ -58,8 +58,8 @@ export function FleetCard({
 
           {!vehicle.owned ? (
             <p className="mt-2 text-xs text-text-muted">
-              Available through our travel network — customized quotes based on
-              your route and dates.
+              Arranged for your dates through our operator network. The fare
+              names the vehicle.
             </p>
           ) : null}
 
@@ -87,7 +87,7 @@ export function FleetCard({
             aria-label={`View ${vehicle.name} photo gallery`}
           >
             <Images className="h-4 w-4" aria-hidden="true" />
-            View Gallery
+            See photos
           </Button>
         </div>
       </article>

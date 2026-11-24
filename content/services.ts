@@ -10,57 +10,57 @@ export const services: Service[] = [
   {
     id: "family",
     slug: "family-group-trips",
-    title: "Family and Group Trips",
+    title: "Family and friends",
     description:
-      "Comfortable Traveller travel for family vacations and friend groups with door-to-door pickup planning.",
+      "One coach from your Greater Noida, Ghaziabad or Delhi address, with room for elders, children and the bags that never fit in two cars.",
     icon: "users",
   },
   {
     id: "corporate",
     slug: "corporate-travel",
-    title: "Corporate Travel",
+    title: "Office offsites",
     description:
-      "Reliable group transportation for offsites, conferences, team outings and staff transfers.",
+      "A single pickup for the team — offsite, plant visit or conference transfer — timed to the agenda your organiser already has.",
     icon: "briefcase",
   },
   {
     id: "wedding",
     slug: "wedding-transportation",
-    title: "Wedding Transportation",
+    title: "Wedding guest movement",
     description:
-      "Coordinated guest transfers and wedding-day travel support with spacious, presentable vehicles.",
+      "Baraat support, venue hops and guest drops on the wedding day, with a presentable cabin and a contact who stays on WhatsApp.",
     icon: "heart",
   },
   {
     id: "airport",
     slug: "airport-transfers",
-    title: "Airport Transfers",
+    title: "Airport group pickups",
     description:
-      "Group airport pickup and drop for families, teams and wedding guests across Delhi NCR airports.",
+      "Meet a family or a full guest list at Delhi airports and take them to one address, or the other way round for a departure.",
     icon: "plane",
   },
   {
     id: "religious",
     slug: "religious-journeys",
-    title: "Religious Journeys",
+    title: "Temple and yatra travel",
     description:
-      "Thoughtful planning for pilgrimages and temple visits with attention to comfort and timing.",
+      "Darshan runs and longer yatras planned around your timing, with honest notes on hill roads, crowds and how far the coach can go.",
     icon: "temple",
   },
   {
     id: "school",
     slug: "school-college-trips",
-    title: "School and College Trips",
+    title: "School and college groups",
     description:
-      "Organised group travel for educational and recreational trips with clear coordination.",
+      "A coach and a driver for the educational or picnic day, with the departure, headcount and return fixed before the students board.",
     icon: "graduation",
   },
   {
     id: "outstation",
     slug: "customized-outstation-travel",
-    title: "Customized Outstation Travel",
+    title: "Outstation routes you name",
     description:
-      "Flexible outstation journeys across North India planned around your dates, route and group size.",
+      "Multi-day driving across North India shaped by your dates and stops. The quote covers the coach, not a hotel bundle.",
     icon: "map",
   },
 ];
@@ -68,47 +68,56 @@ export const services: Service[] = [
 export const whyChooseUs = [
   {
     id: "vehicles",
-    title: "Well-Maintained Vehicles",
-    description: "Clean, spacious Traveller options prepared for comfortable group journeys.",
+    title: "Coaches checked before rollout",
+    description:
+      "Seats, cooling and luggage space are looked over before the group boards in Greater Noida or at your pickup.",
   },
   {
     id: "drivers",
-    title: "Experienced and Verified Drivers",
-    description: "Professional drivers focused on safe, courteous and dependable travel.",
+    title: "Drivers who know these highways",
+    description:
+      "Hill and highway days are driven by people used to NCR departures toward Uttarakhand, Himachal and Rajasthan.",
   },
   {
     id: "gps",
-    title: "GPS Tracking",
-    description: "Journey visibility that supports peace of mind for families and organisers.",
+    title: "GPS on equipped coaches",
+    description:
+      "When the assigned vehicle has tracking, organisers can follow the journey instead of guessing.",
   },
   {
     id: "cctv",
-    title: "CCTV-Enabled Vehicle",
-    description: "Added monitoring support on equipped vehicles for safer group travel.",
+    title: "Cabin camera where fitted",
+    description:
+      "Ask us to confirm a camera for your date. We only promise it on coaches that actually have one.",
   },
   {
     id: "pricing",
-    title: "Transparent Pricing",
-    description: "Clear custom quotations based on route, dates, vehicle and passenger needs.",
+    title: "Fare written before you confirm",
+    description:
+      "The number follows the route, dates, vehicle and waiting time. Nothing is listed as a package price on this site.",
   },
   {
     id: "ontime",
-    title: "On-Time Pickup",
-    description: "Punctual coordination so your group can travel with less waiting and stress.",
+    title: "A pickup window we agree",
+    description:
+      "We set the departure with you, including a buffer when the group is coming from more than one address.",
   },
   {
     id: "clean",
-    title: "Clean Interiors",
-    description: "Sanitized, presentable cabins suited for families, guests and corporate teams.",
+    title: "Cabin cleaned for each group",
+    description:
+      "Interiors are prepared for families, wedding guests and office teams, not left over from the previous trip.",
   },
   {
     id: "support",
-    title: "Customer Support",
-    description: "Helpful enquiry support before and during your travel planning.",
+    title: "One desk on phone and WhatsApp",
+    description:
+      "The Greater Noida desk stays available for the enquiry and for updates once the trip is on.",
   },
   {
     id: "flexible",
-    title: "Flexible Destination Planning",
-    description: "Routes shaped around your preferred destinations — not fixed tour packages.",
+    title: "Your route, not a set tour",
+    description:
+      "Destinations on this site are places we drive to. Nights, hotels and sightseeing stay yours to decide.",
   },
 ] as const;

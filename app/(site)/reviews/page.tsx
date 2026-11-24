@@ -13,7 +13,7 @@ import { cn } from "@/lib/utils";
 export const metadata = createMetadata({
   title: "Customer Reviews & Feedback",
   description:
-    "Read traveller feedback about Smart Squad Travels group transportation from Delhi NCR. Connect Google Business Profile reviews when ready for live ratings.",
+    "Notes from groups who asked Arohan Travels in Greater Noida for a coach. Live Google ratings appear here once they are connected.",
   path: "/reviews",
 });
 
@@ -42,8 +42,8 @@ export default async function ReviewsPage() {
             Customer Reviews
           </h1>
           <p className="mt-3 max-w-2xl text-base text-white/80 md:text-lg">
-            Feedback from groups who have travelled with us. We are committed to
-            transparent, comfortable group transportation.
+            Notes from groups who have used the Greater Noida desk. We keep the
+            fare and the vehicle clear before travel day.
           </p>
         </div>
       </section>

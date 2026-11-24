@@ -397,7 +397,7 @@ export function EnquiriesManager() {
                 </a>
                 <a
                   href={`https://wa.me/${toWhatsAppNumber(selected.phone)}?text=${encodeURIComponent(
-                    `Hi ${selected.fullName}, this is Smart Squad Travels regarding your enquiry ${selected.reference}.`,
+                    `Hi ${selected.fullName}, this is Arohan Travels regarding your enquiry ${selected.reference}.`,
                   )}`}
                   target="_blank"
                   rel="noopener noreferrer"

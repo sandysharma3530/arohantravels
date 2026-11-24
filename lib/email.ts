@@ -44,7 +44,7 @@ export async function sendEnquiryNotificationEmail(params: {
   const html = `
     <div style="font-family:Arial,sans-serif;max-width:640px;margin:0 auto;">
       <h2 style="color:#061B36;">New enquiry — ${escapeHtml(reference)}</h2>
-      <p style="color:#667085;">A customer submitted a Quick Enquiry on ${escapeHtml(siteConfig.businessName)}.</p>
+      <p style="color:#667085;">A customer sent a trip request on ${escapeHtml(siteConfig.businessName)}.</p>
       <table style="width:100%;border-collapse:collapse;background:#fff;border:1px solid #e5e7eb;border-radius:8px;">
         ${row("Enquiry reference", reference)}
         ${row("Customer name", data.fullName)}
@@ -94,7 +94,7 @@ export async function sendCustomerAcknowledgementEmail(params: {
       <p>${escapeHtml(siteConfig.businessName)} has received your travel enquiry <strong>${escapeHtml(params.reference)}</strong>.</p>
       <p>Our team will review your request and contact you shortly to discuss a customized quotation. We do not promise an exact response time, but we aim to get back as soon as possible.</p>
       <p style="color:#667085;">Trip summary: ${escapeHtml(params.data.pickupLocation)} → ${escapeHtml(params.data.destination)} · ${escapeHtml(params.data.travelDate)}</p>
-      <p>Thank you for choosing ${escapeHtml(siteConfig.businessName)}.<br/>Travel Smart. Travel Together.</p>
+      <p>Thank you for writing to ${escapeHtml(siteConfig.businessName)}.<br/>Where every journey feels invited.</p>
     </div>
   `;
 

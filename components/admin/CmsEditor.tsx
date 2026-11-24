@@ -353,12 +353,12 @@ function SiteEditor({
 const HOME_SECTION_LABELS: Record<HomeSectionKey, string> = {
   hero: "Hero slider",
   trustBar: "Trust bar",
-  fleet: "Our Fleet",
-  destinations: "Popular Destinations",
-  services: "Our Services",
-  whyChooseUs: "Why Choose Us",
-  reviews: "What Our Customers Say",
-  faqs: "Frequently Asked Questions",
+  fleet: "Coaches we arrange",
+  destinations: "Routes from Greater Noida",
+  services: "Trips the desk handles",
+  whyChooseUs: "How Arohan runs a trip",
+  reviews: "Traveller notes",
+  faqs: "Questions groups ask first",
   contactCta: "Contact call-to-action",
 };
 

@@ -44,8 +44,8 @@ export async function generateMetadata({ params }: DestinationDetailPageProps) {
   }
 
   return createMetadata({
-    title: `${destination.name} Traveller from Delhi NCR`,
-    description: `${destination.shortDescription} Request a customized Force Traveller or Urbania quote for group travel to ${destination.name} from Noida and Delhi NCR.`,
+    title: `${destination.name} by coach from Greater Noida`,
+    description: `${destination.shortDescription} Arohan Travels quotes a Force Urbania or Traveller for ${destination.name}.`,
     path: `/destinations/${destination.slug}`,
     image: destination.coverImage,
     keywords: [
@@ -147,14 +147,14 @@ export default async function DestinationDetailPage({
           <div className="grid gap-10 lg:grid-cols-[1fr_380px] lg:items-start">
             <div className="space-y-10">
               <div>
-                <h2 className="text-2xl font-bold text-navy">Introduction</h2>
+                <h2 className="text-2xl font-bold text-navy">How we drive this route</h2>
                 <p className="mt-4 leading-relaxed text-text-muted">
                   {destination.introduction}
                 </p>
               </div>
 
               <div>
-                <h2 className="text-2xl font-bold text-navy">Highlights</h2>
+                <h2 className="text-2xl font-bold text-navy">What groups usually ask for</h2>
                 <ul className="mt-4 grid gap-3 sm:grid-cols-2">
                   {destination.highlights.map((highlight) => (
                     <li
@@ -186,27 +186,27 @@ export default async function DestinationDetailPage({
                   <div className="flex items-center gap-2 text-teal">
                     <Clock className="h-5 w-5" aria-hidden="true" />
                     <h3 className="font-bold text-navy">
-                      Suggested Duration
+                      Typical time away
                     </h3>
                   </div>
                   <p className="mt-2 text-sm text-text-muted">
                     {destination.suggestedDuration}
                   </p>
                   <p className="mt-1 text-xs text-teal">
-                    Fully customizable for your group
+                    Nights and stops stay up to you. We quote the coach.
                   </p>
                 </div>
               </div>
 
               <div>
-                <h2 className="text-2xl font-bold text-navy">Road Travel Notes</h2>
+                <h2 className="text-2xl font-bold text-navy">Driving notes from Greater Noida</h2>
                 <p className="mt-4 leading-relaxed text-text-muted">
                   {destination.roadTravelNotes}
                 </p>
               </div>
 
               <div>
-                <h2 className="text-2xl font-bold text-navy">Suitable For</h2>
+                <h2 className="text-2xl font-bold text-navy">Who books this run</h2>
                 <ul className="mt-4 flex flex-wrap gap-2">
                   {destination.suitableFor.map((item) => (
                     <li
@@ -252,7 +252,7 @@ export default async function DestinationDetailPage({
               {destination.nearbyPlaces.length > 0 ? (
                 <div>
                   <h2 className="text-2xl font-bold text-navy">
-                    Nearby Places
+                    Often added to the same trip
                   </h2>
                   <ul className="mt-4 flex flex-wrap gap-2">
                     {destination.nearbyPlaces.map((place) => (
@@ -279,8 +279,8 @@ export default async function DestinationDetailPage({
       </section>
 
       <ContactCTA
-        heading={`Plan your ${destination.name} trip`}
-        text="Share your travel dates and group size for a customized Force Traveller or Urbania quotation."
+        heading={`Take a coach to ${destination.name}`}
+        text="Send your dates and headcount. Arohan will reply with a fare from Greater Noida for this route."
       />
     </>
   );

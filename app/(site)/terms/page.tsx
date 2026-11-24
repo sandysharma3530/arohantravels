@@ -5,7 +5,7 @@ import { createMetadata } from "@/lib/seo";
 export const metadata = createMetadata({
   title: "Terms of Service",
   description:
-    "Terms of service for Smart Squad Travels website and travel enquiry services. General terms for group transportation quotations and bookings.",
+    "Terms for using the Arohan Travels website and for coach fares arranged from Greater Noida.",
   path: "/terms",
 });
 
@@ -49,10 +49,9 @@ export default async function TermsPage() {
             <div>
               <h2 className="text-xl font-bold text-navy">Services</h2>
               <p className="mt-3 leading-relaxed text-text-muted">
-                {siteConfig.businessName} provides group transportation and
-                Traveller rental coordination services. Quotations are customized
-                based on route, dates, vehicle type and passenger requirements.
-                We do not sell fixed tour packages through this website.
+                {siteConfig.businessName} arranges group coaches. A fare is
+                written for the route, dates, vehicle and passenger count. This
+                website does not sell hotel or sightseeing packages.
               </p>
             </div>
 

@@ -16,8 +16,8 @@ export async function DestinationsSection({ className }: DestinationsSectionProp
     <section className={cn("section-pad", className)}>
       <div className="container-site">
         <SectionHeader
-          title="Popular Destinations"
-          subtitle="Popular locations we serve across North India."
+          title="Routes from Greater Noida"
+          subtitle="Hills, cities and temple towns we drive to. Each one is a coach plan, not a hotel package."
         />
 
         <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">

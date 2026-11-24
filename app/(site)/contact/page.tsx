@@ -27,9 +27,9 @@ import { cn } from "@/lib/utils";
 import type { vehicleOptions } from "@/lib/validation";
 
 export const metadata = createMetadata({
-  title: "Contact Us for a Custom Traveller Quote",
+  title: "Ask the Greater Noida desk",
   description:
-    "Contact Arohan Travels for customized Force Traveller and Urbania quotations. Call, WhatsApp or submit an enquiry for group travel from Noida, Greater Noida and Delhi NCR.",
+    "Call, WhatsApp or write to Arohan Travels in Greater Noida for a Force Urbania or Traveller fare. Share the date, pickup and headcount.",
   path: "/contact",
   keywords: [
     "Traveller rental contact Noida",
@@ -166,7 +166,7 @@ export default async function ContactPage({ searchParams }: ContactPageProps) {
                       <h2 className="font-bold text-navy">WhatsApp</h2>
                     </div>
                     <p className="mt-2 text-sm text-text-muted">
-                      Quick responses for travel enquiries and quotes.
+                      Quick replies for trip requests and fares.
                     </p>
                     <a
                       href={getWhatsAppLink(

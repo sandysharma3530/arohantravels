@@ -5,7 +5,7 @@ import { createMetadata } from "@/lib/seo";
 export const metadata = createMetadata({
   title: "Privacy Policy",
   description:
-    "Privacy policy for Smart Squad Travels — how we collect, use and protect your personal information when you submit travel enquiries.",
+    "Privacy policy for Arohan Travels — how the Greater Noida desk collects and uses details you send with a trip request.",
   path: "/privacy",
 });
 

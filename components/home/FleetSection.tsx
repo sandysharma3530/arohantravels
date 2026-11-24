@@ -13,8 +13,8 @@ export async function FleetSection({ className }: FleetSectionProps) {
     <section className={cn("section-pad bg-bg-light", className)}>
       <div className="container-site">
         <SectionHeader
-          title="Our Fleet"
-          subtitle="Comfortable, spacious and well-maintained vehicles for every journey."
+          title="Coaches we arrange"
+          subtitle="An Urbania for the longer day, or a 21-seat Traveller when the guest list grows. The exact vehicle is confirmed with the fare."
         />
 
         <div className="grid gap-8 lg:grid-cols-2">

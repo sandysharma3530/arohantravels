@@ -134,7 +134,7 @@ export async function Footer() {
           </div>
 
           <FooterLinkGroup
-            title="Quick Links"
+            title="On this site"
             links={getVisibleNavItems(site.nav).map((item) => ({
               label: item.label,
               href: item.href,
@@ -142,7 +142,7 @@ export async function Footer() {
           />
 
           <FooterLinkGroup
-            title="Our Fleet"
+            title="Coaches"
             links={[
               { label: "Force Traveller", href: "/fleet#force-traveller" },
               { label: "Force Urbania", href: "/fleet#force-urbania" },
@@ -150,7 +150,7 @@ export async function Footer() {
           />
 
           <FooterLinkGroup
-            title="Destinations"
+            title="Places"
             links={footerDestinations.map((d) => ({
               label: d.name,
               href: `/destinations/${d.slug}`,
@@ -158,7 +158,7 @@ export async function Footer() {
           />
 
           <FooterLinkGroup
-            title="Services"
+            title="Trip types"
             links={services.map((s) => ({
               label: s.title,
             }))}

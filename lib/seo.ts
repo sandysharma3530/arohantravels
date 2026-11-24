@@ -9,23 +9,23 @@ import type { CmsSite } from "@/lib/cms/types";
 import { resolveBranding } from "@/lib/cms/branding";
 
 export const defaultTitle =
-  "Arohan Travels | Luxury Urbania & Force Traveller Rental in Delhi NCR";
+  "Arohan Travels | Urbania & Traveller Hire from Greater Noida";
 
 export const defaultDescription =
-  "Arohan Travels provides luxury and comfortable Urbania & Force Travellerservices for family trips, corporate travel, weddings, pilgrimages, airport transfers and customized outstation journeys from Delhi NCR.";
+  "Arohan Travels, based in Greater Noida, arranges Force Urbania and 21-seat Force Traveller coaches for families, weddings, offices and yatra groups. Ask for a written fare — hotels and sightseeing stay off the quote.";
 
 /** Light keyword set for secondary engines — keep natural, never stuff into body copy. */
 export const primaryKeywords = [
-  "LuxuryForce Urbania rental",
-  "Force Traveller rental Delhi NCR",
-  "21 seater Traveller Noida",
-  "13 seater Urbania rental",
-  "Luxury Force Traveller rental",
-  "group transportation Delhi NCR",
-  "outstation Traveller hire",
-  "wedding Traveller transport",
-  "corporate group travel Noida",
-  "airport transfer Traveller",
+  "Force Urbania hire Greater Noida",
+  "Force Traveller from Ghaziabad",
+  "21 seater Traveller Greater Noida",
+  "group coach Delhi NCR",
+  "outstation Urbania hire",
+  "wedding guest coach Noida",
+  "office offsite transport Greater Noida",
+  "airport group pickup Delhi",
+  "yatra coach Uttarakhand",
+  "Arohan Travels",
 ] as const;
 
 function absoluteUrl(pathOrUrl: string) {
@@ -138,7 +138,7 @@ export function createMetadata({
     },
     other: {
       "geo.region": "IN-UP",
-      "geo.placename": "Noida, Delhi NCR",
+      "geo.placename": "Greater Noida, Ghaziabad",
       "og:locale:alternate": "en",
     },
     ...(Object.keys(verification).length ? { verification } : {}),
@@ -306,8 +306,8 @@ export function serviceJsonLd() {
   return {
     "@context": "https://schema.org",
     "@type": "Service",
-    name: "Force Traveller Group Transportation",
-    serviceType: "Group transportation and Traveller rental",
+    name: "Arohan Travels group coach hire",
+    serviceType: "Force Urbania and Force Traveller hire from Greater Noida",
     provider: { "@id": `${siteConfig.siteUrl}/#localbusiness` },
     areaServed: siteConfig.serviceAreas.map((name) => ({
       "@type": "Place",

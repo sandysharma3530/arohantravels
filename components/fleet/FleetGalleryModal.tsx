@@ -230,7 +230,7 @@ export function FleetGalleryModal({
             href={`/contact?vehicle=${encodeURIComponent(vehicle.slug)}`}
             className={buttonVariants({ variant: "teal", size: "md" })}
           >
-            Request Quote
+            Ask for a fare
           </Link>
           <a
             href={getWhatsAppLink(quoteMessage, site.whatsappNumber)}

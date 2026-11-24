@@ -1,22 +1,80 @@
 {
-  "businessName": "Arohan Travels",
-  "tagline": "Where Every Journey Feels Invited",
-  "legalName": "Arohan Travels",
-  "shortDescription": "Comfortable group transportation and Traveller rental services for family trips, corporate travel, weddings, pilgrimages, airport transfers and customized outstation journeys across Delhi NCR and North India.",
-  "phoneDisplay": "+91 99580 77442",
-  "phoneInternational": "+919958077442",
-  "whatsappNumber": "919958077442",
+  "nav": [
+    {
+      "href": "/",
+      "label": "Home",
+      "enabled": true
+    },
+    {
+      "href": "/about",
+      "label": "About Us",
+      "enabled": true
+    },
+    {
+      "href": "/fleet",
+      "label": "Fleet",
+      "enabled": true
+    },
+    {
+      "href": "/destinations",
+      "label": "Destinations",
+      "enabled": true
+    },
+    {
+      "href": "/gallery",
+      "label": "Gallery",
+      "enabled": true
+    },
+    {
+      "href": "/reviews",
+      "label": "Reviews",
+      "enabled": false
+    },
+    {
+      "href": "/blog",
+      "label": "Blog",
+      "enabled": false
+    },
+    {
+      "href": "/contact",
+      "label": "Contact Us",
+      "enabled": true
+    }
+  ],
   "email": "arohantravels40@gmail.com",
-  "publicEmail": "arohantravels40@gmail.com",
+  "social": {
+    "youtubeUrl": "https://www.youtube.com/@REPLACE_YOUTUBE_CHANNEL",
+    "facebookUrl": "https://www.facebook.com/people/Arohan-Travels-Noida-India/61569217923753/",
+    "instagramUrl": "https://www.instagram.com/urbania_aamantran_by_arohan"
+  },
   "address": {
+    "city": "Greater Noida",
+    "full": "1, Plot No, Tyagi Market, Sector 16B Rd, Panchsheel Greens, Ghaziabad, Greater Noida, Uttar Pradesh 201009",
     "line1": " Sector 16B Rd, Panchsheel Greens,",
     "line2": " Ghaziabad, ",
-    "city": "Greater Noida",
     "state": "Uttar Pradesh",
-    "postalCode": "201009",
     "country": "India",
-    "full": "1, Plot No, Tyagi Market, Sector 16B Rd, Panchsheel Greens, Ghaziabad, Greater Noida, Uttar Pradesh 201009"
+    "postalCode": "201009"
   },
+  "siteUrl": "https://www.arohantravels.com",
+  "tagline": "Where Every Journey Feels Invited",
+  "branding": {
+    "icon": "/images/uploads/brand/whatsapp-image-2026-08-29-at-10-45-18-jpeg-icon--1789138257631.png",
+    "logo": "https://jgjkceydjxxaicvuavze.supabase.co/storage/v1/object/public/cms-uploads/brand/whatsapp-image-2026-08-29-at-10-45-18-jpeg-logo-1789138257625.webp",
+    "width": 1200,
+    "height": 1200,
+    "icon192": "https://jgjkceydjxxaicvuavze.supabase.co/storage/v1/object/public/cms-uploads/brand/whatsapp-image-2026-08-29-at-10-45-18-jpeg-icon--1789138257631.png",
+    "appleIcon": "https://jgjkceydjxxaicvuavze.supabase.co/storage/v1/object/public/cms-uploads/brand/whatsapp-image-2026-08-29-at-10-45-18-jpeg-apple-1789138257631.png"
+  },
+  "legalName": "Arohan Travels",
+  "ownedFleet": {
+    "forceUrbania": false,
+    "forceTraveller": false
+  },
+  "mapEmbedUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7005.353326115329!2d77.43595361709598!3d28.60947531080916!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cef1f4c516fdf%3A0xca3e4e80f301b041!2sAROHAN%20TRAVELS!5e0!3m2!1sen!2sin!4v1787778281706!5m2!1sen!2sin",
+  "publicEmail": "arohantravels40@gmail.com",
+  "businessName": "Arohan Travels",
+  "phoneDisplay": "+91 99580 77442",
   "serviceAreas": [
     "Noida",
     "Greater Noida",
@@ -32,70 +90,20 @@
     "weekdays": "24 hours",
     "weekends": "24 hours"
   },
-  "mapEmbedUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7005.353326115329!2d77.43595361709598!3d28.60947531080916!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cef1f4c516fdf%3A0xca3e4e80f301b041!2sAROHAN%20TRAVELS!5e0!3m2!1sen!2sin!4v1787778281706!5m2!1sen!2sin",
-  "social": {
-    "facebookUrl": "https://www.facebook.com/people/Arohan-Travels-Noida-India/61569217923753/",
-    "instagramUrl": "https://www.instagram.com/urbania_aamantran_by_arohan",
-    "youtubeUrl": "https://www.youtube.com/@REPLACE_YOUTUBE_CHANNEL"
-  },
-  "googleBusinessUrl": "https://g.page/arohantravels",
-  "googleReviewUrl": "https://g.page/r/CV4I-0H7bLXcEBM/review",
-  "ownedFleet": {
-    "forceTraveller": false,
-    "forceUrbania": false
-  },
   "availableFleet": {
-    "forceTraveller": true,
-    "forceUrbania": true
-  },
-  "trustStatistics": {
-    "googleRating": null,
-    "googleReviewCount": null,
-    "yearsOfExperience": null,
-    "tripsCompleted": null
+    "forceUrbania": true,
+    "forceTraveller": true
   },
   "primaryVehicle": "Force Urbania",
-  "siteUrl": "https://www.arohantravels.com",
-  "nav": [
-    {
-      "label": "Home",
-      "href": "/",
-      "enabled": true
-    },
-    {
-      "label": "About Us",
-      "href": "/about",
-      "enabled": true
-    },
-    {
-      "label": "Fleet",
-      "href": "/fleet",
-      "enabled": true
-    },
-    {
-      "label": "Destinations",
-      "href": "/destinations",
-      "enabled": true
-    },
-    {
-      "label": "Gallery",
-      "href": "/gallery",
-      "enabled": true
-    },
-    {
-      "label": "Reviews",
-      "href": "/reviews",
-      "enabled": false
-    },
-    {
-      "label": "Blog",
-      "href": "/blog",
-      "enabled": false
-    },
-    {
-      "label": "Contact Us",
-      "href": "/contact",
-      "enabled": true
-    }
-  ]
+  "whatsappNumber": "919958077442",
+  "googleReviewUrl": "https://g.page/r/CV4I-0H7bLXcEBM/review",
+  "trustStatistics": {
+    "googleRating": null,
+    "tripsCompleted": null,
+    "googleReviewCount": null,
+    "yearsOfExperience": null
+  },
+  "shortDescription": "Greater Noida desk for Force Urbania and Force Traveller group travel — families, weddings, offices, airport batches and temple runs across North India, with a written fare for the coach.",
+  "googleBusinessUrl": "https://g.page/arohantravels",
+  "phoneInternational": "+919958077442"
 }

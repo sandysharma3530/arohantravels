@@ -41,7 +41,7 @@ function LoginForm() {
         className="w-full max-w-md rounded-2xl bg-white p-8 shadow-soft"
       >
         <p className="text-xs font-semibold uppercase tracking-[0.2em] text-teal">
-          Smart Squad Travels
+          Arohan Travels
         </p>
         <h1 className="mt-2 text-2xl font-bold text-navy">Admin login</h1>
         {setup ? (

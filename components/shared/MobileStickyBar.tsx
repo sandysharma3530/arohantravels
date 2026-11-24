@@ -70,7 +70,7 @@ export function MobileStickyBar() {
             "h-auto flex-col gap-1 rounded-lg py-2.5 text-xs",
           )}
         >
-          Get Quote
+          Get Fare
         </Link>
       </div>
     </div>

@@ -21,12 +21,12 @@ export const galleryCategories: { id: GalleryCategory; label: string }[] = [
   { id: "all", label: "All" },
   { id: "force-traveller", label: "Force Traveller" },
   { id: "force-urbania", label: "Force Urbania" },
-  { id: "interiors", label: "Vehicle Interiors" },
-  { id: "exteriors", label: "Vehicle Exteriors" },
-  { id: "trip-locations", label: "Trip Locations" },
-  { id: "weddings", label: "Weddings" },
-  { id: "corporate", label: "Corporate Travel" },
-  { id: "religious", label: "Religious Journeys" },
+  { id: "interiors", label: "Cabin photos" },
+  { id: "exteriors", label: "Outside the coach" },
+  { id: "trip-locations", label: "On the road" },
+  { id: "weddings", label: "Wedding days" },
+  { id: "corporate", label: "Office trips" },
+  { id: "religious", label: "Temple runs" },
 ];
 
 /**

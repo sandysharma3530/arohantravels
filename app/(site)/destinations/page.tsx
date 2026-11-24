@@ -6,9 +6,9 @@ import { SectionHeader } from "@/components/ui/SectionHeader";
 import { createMetadata } from "@/lib/seo";
 
 export const metadata = createMetadata({
-  title: "Destinations Across North India",
+  title: "Places we drive to",
   description:
-    "Popular destinations we serve from Delhi NCR — Tungnath, Nainital, Manali, Jaipur, Kedarnath, Haridwar and more. Request a customized Traveller quote for your group.",
+    "Hill towns, temple runs and city trips Arohan Travels covers by coach from Greater Noida — including Nainital, Manali, Jaipur, Kedarnath and Haridwar.",
   path: "/destinations",
   keywords: [
     "Traveller to Manali from Delhi",
@@ -38,12 +38,11 @@ export default async function DestinationsPage() {
             </ol>
           </nav>
           <h1 className="text-3xl font-bold text-white md:text-4xl">
-            Popular Destinations
+            Routes from Greater Noida
           </h1>
           <p className="mt-3 max-w-2xl text-base text-white/80 md:text-lg">
-            Explore North India destinations served from Noida, Greater Noida
-            and Delhi NCR. Every journey is planned around your dates and group
-            size — not fixed tour packages.
+            These are places the coach can take you. Nights, hotels and
+            sightseeing stay on your list — we price the driving.
           </p>
         </div>
       </section>
@@ -52,8 +51,8 @@ export default async function DestinationsPage() {
         <div className="container-site">
           <SectionHeader
             as="h2"
-            title="Where Would You Like to Go?"
-            subtitle="Select a destination to see highlights, travel notes and request a customized group travel quote."
+            title="Pick a place"
+            subtitle="Open a route for driving notes, then send the dates if you want a fare."
           />
 
           <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">

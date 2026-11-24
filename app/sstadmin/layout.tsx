@@ -5,7 +5,7 @@ import { getPreferredBackend, readBundle } from "@/lib/cms/store";
 import { isEphemeralHost } from "@/lib/runtime";
 
 export const metadata = {
-  title: "Admin | Smart Squad Travels",
+  title: "Admin | Arohan Travels",
   robots: { index: false, follow: false },
 };
 
